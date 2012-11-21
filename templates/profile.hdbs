@@ -1,3 +1,5 @@
 <div>
-	<p>BigCommerce profile here</p>
+	<h4>
+		<a href="{{customer_uri}}" target="_blank">{{first_name}} {{last_name}}</a>
+	</h4>
 </div>
