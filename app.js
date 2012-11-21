@@ -26,7 +26,12 @@
 			'app.activated'						: 'dataChanged',
 			'ticket.subject.changed'			: 'dataChanged',
 			'ticket.requester.email.changed'	: 'dataChanged',
-			'getProfile.done'					: 'handleGetProfile'
+			'getProfile.fail'					: 'handleGetProfileError',
+			'getProfile.done'					: 'handleGetProfile',
+			'getProfile.always'					: function(data) {
+				//console.log(data);
+			}
+			
 		},
 
 		handleGetProfile: function(data) {
@@ -43,6 +48,23 @@
 			var requesterEmail = this.ticket().requester().email();
 			if (_.isUndefined(requesterEmail)) return;
 			this.ajax('getProfile', requesterEmail);
+		},
+
+		showError: function(title, msg) {
+			this.switchTo('error', {
+				title: title || this.I18n.t('global.error.title'),
+				message: msg || this.I18n.t('global.error.message')
+			});
+		},
+
+		handleGetProfileError: function() {
+			// Show fail message
+			this.showError(this.I18n.t('global.error.customerNotFound'), "");
+		},
+
+		handleFail: function(data, textStatus, jqXHR) {
+			// Show fail message
+			this.showError();
 		}
 	};
 

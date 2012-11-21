@@ -1,6 +1,13 @@
 {
 	"app": {
 		"description": "Displays customer and order details from BigCommerce."
-    }
+    },
 
+    "global": {
+		"error": {
+			"title"     : "An error occurred",
+			"message"   : "Please try the previous action again.",
+			"customerNotFound" : "Customer does not exist."
+		}
+	}
 }
