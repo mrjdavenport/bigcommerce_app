@@ -9,5 +9,10 @@
 			"message"   : "Please try the previous action again.",
 			"customerNotFound" : "Customer does not exist."
 		}
+	},
+
+	"orders": {
+		"id"          : "RECENT ORDERS",
+		"status"      : "STATUS"
 	}
 }

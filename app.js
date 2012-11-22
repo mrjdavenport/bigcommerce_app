@@ -5,20 +5,18 @@
 		profileData: {},
 
 		resources: {
-			PROFILE_URI		: '/api/v2/customers.json?email=',
-			CUSTOMER_URI	: '/admin/index.php?ToDo=viewCustomers&searchId='
+			PROFILE_URI			: '/api/v2/customers.json?email=',
+			RECENT_ORDERS_URI	: '/api/v2/orders.json?customer_id=',
+			CUSTOMER_URI		: '/admin/index.php?ToDo=viewCustomers&searchId=',
+			ORDER_URI			: '/admin/index.php?ToDo=viewOrders&sortField=orderid&sortOrder=desc&searchQuery='
 		},
 
 		requests: {
 			'getProfile' : function(email) {
-				return {
-					headers  : {
-						'Authorization': 'Basic ' + Base64.encode(this.settings.username + ':' + this.settings.api_token)
-					},
-					url      : this.settings.url + this.resources.PROFILE_URI + email,
-					method   : 'GET',
-					dataType : 'json'
-				};
+				return this.getRequest(this.settings.url + this.resources.PROFILE_URI + email);
+			},
+			'getOrders' : function(customer_id) {
+				return this.getRequest(this.settings.url + this.resources.RECENT_ORDERS_URI + customer_id);
 			}
 		},
 
@@ -28,16 +26,43 @@
 			'ticket.requester.email.changed'	: 'dataChanged',
 			'getProfile.fail'					: 'handleGetProfileError',
 			'getProfile.done'					: 'handleGetProfile',
-			'getProfile.always'					: function(data) {
-				//console.log(data);
+			'getOrders.done'					: 'handleGetOrders',
+
+			'getOrders.always'					: function() {
+				this.switchTo('profile',this.profileData);
 			}
-			
+		},
+
+		getRequest: function(resource) {
+			return {
+				headers  : {
+					'Authorization': 'Basic ' + Base64.encode(this.settings.username + ':' + this.settings.api_token)
+				},
+				url      : resource,
+				method   : 'GET',
+				dataType : 'json'
+			};
 		},
 
 		handleGetProfile: function(data) {
+			if (_.isUndefined(data[0])) return;
 			this.profileData = data[0];
-			this.profileData.customer_uri = this.settings.url+ this.resources.CUSTOMER_URI + this.profileData.id;
-			this.switchTo('profile',this.profileData);
+			this.profileData.customer_uri = this.settings.url + this.resources.CUSTOMER_URI + this.profileData.id;
+			this.ajax('getOrders', this.profileData.id);
+		},
+
+		handleGetOrders: function(data) {
+			if (_.isUndefined(data[0])) return;
+			this.profileData.recentOrders = data;
+			this.profileData.ordersCount = data.length;
+
+			if (data.length > 3) {
+				this.profileData.recentOrders = data.slice(data.length-3, data.length).reverse();
+			} else {
+				this.profileData.recentOrders = data.reverse();
+			}
+
+			this.profileData.recentOrders.uri = this.settings.url + this.resources.ORDER_URI;
 		},
 
 		dataChanged: function() {
@@ -59,10 +84,10 @@
 
 		handleGetProfileError: function() {
 			// Show fail message
-			this.showError(this.I18n.t('global.error.customerNotFound'), "");
+			this.showError(this.I18n.t('global.error.customerNotFound'), " ");
 		},
 
-		handleFail: function(data, textStatus, jqXHR) {
+		handleFail: function() {
 			// Show fail message
 			this.showError();
 		}

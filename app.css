@@ -1,0 +1,17 @@
+table {
+	margin: 18px 0 9px;
+}
+
+.badge {
+	color: white;
+	font-size: 9px;
+	padding: 2px 9px;
+	text-transform: uppercase;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+h5 {
+	margin-top: 9px;
+}
