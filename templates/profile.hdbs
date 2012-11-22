@@ -21,4 +21,10 @@
 		</tbody>
 	</table>
 	{{/if}}
+
+	<h5>{{t "orders.count"}}</h5>
+	<p>{{ordersCount}}</p>
+
+	<h5>{{t "customer.notes"}}</h5>
+	<p>{{notes}}</p>
 </div>

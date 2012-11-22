@@ -11,8 +11,13 @@
 		}
 	},
 
+	"customer" : {
+		"notes"		: "Notes"
+	},
+
 	"orders": {
-		"id"          : "RECENT ORDERS",
-		"status"      : "STATUS"
+		"id"        : "RECENT ORDERS",
+		"status"    : "STATUS",
+		"count"		: "Orders count"
 	}
 }

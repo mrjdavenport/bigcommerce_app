@@ -47,6 +47,7 @@
 		handleGetProfile: function(data) {
 			if (_.isUndefined(data[0])) return;
 			this.profileData = data[0];
+			this.profileData.notes = data[0].notes;
 			this.profileData.customer_uri = this.settings.url + this.resources.CUSTOMER_URI + this.profileData.id;
 			this.ajax('getOrders', this.profileData.id);
 		},
