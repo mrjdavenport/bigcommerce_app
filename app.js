@@ -7,8 +7,8 @@
 		resources: {
 			PROFILE_URI			: '/api/v2/customers.json?email=',
 			RECENT_ORDERS_URI	: '/api/v2/orders.json?customer_id=',
-			CUSTOMER_URI		: '/admin/index.php?ToDo=viewCustomers&searchId=',
-			ORDER_URI			: '/admin/index.php?ToDo=viewOrders&sortField=orderid&sortOrder=desc&searchQuery='
+			CUSTOMER_URI		: '%@/admin/index.php?ToDo=searchCustomersRedirect&idFrom=%@&idTo=%@',
+			ORDER_URI			: '%@/admin/index.php?ToDo=searchOrdersRedirect&orderFrom=%@&orderTo=%@'
 		},
 
 		requests: {
@@ -48,7 +48,7 @@
 			if (_.isUndefined(data[0])) return;
 			this.profileData = data[0];
 			this.profileData.notes = data[0].notes;
-			this.profileData.customer_uri = this.settings.url + this.resources.CUSTOMER_URI + this.profileData.id;
+			this.profileData.customer_uri = helpers.fmt(this.resources.CUSTOMER_URI,this.settings.url,this.profileData.id,this.profileData.id);
 			this.ajax('getOrders', this.profileData.id);
 		},
 
@@ -63,7 +63,9 @@
 				this.profileData.recentOrders = data.reverse();
 			}
 
-			this.profileData.recentOrders.uri = this.settings.url + this.resources.ORDER_URI;
+			_.each(this.profileData.recentOrders, function(order) {
+				order.uri = helpers.fmt(this.resources.ORDER_URI,this.settings.url,order.id,order.id);
+			}, this);
 		},
 
 		dataChanged: function() {
