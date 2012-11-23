@@ -83,6 +83,15 @@
 					this.profileData.ticketOrder = _.find(data, function(order){
 						return (order.id == orderId);
 					});
+
+					if (!_.isUndefined(this.profileData.ticketOrder)) {
+						// formatting of numbers and dates
+						var date_length = this.profileData.ticketOrder.date_created.length;
+						this.profileData.ticketOrder.subtotal_inc_tax = parseFloat(this.profileData.ticketOrder.subtotal_inc_tax).toFixed(2);
+						this.profileData.ticketOrder.total_inc_tax = parseFloat(this.profileData.ticketOrder.total_inc_tax).toFixed(2);
+						this.profileData.ticketOrder.date_created = this.profileData.ticketOrder.date_created.substr(0,date_length - 6);
+						this.profileData.ticketOrder.date_shipped = this.profileData.ticketOrder.date_shipped.substr(0,date_length - 6);
+					}
 				}
 			}
 		},
