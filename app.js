@@ -6,6 +6,8 @@
 
 		profileData: {},
 
+		storeUrl: '',
+
 		resources: {
 			PROFILE_URI			: '/api/v2/customers.json?email=',
 			RECENT_ORDERS_URI	: '/api/v2/orders.json?customer_id=',
@@ -15,10 +17,10 @@
 
 		requests: {
 			'getProfile' : function(email) {
-				return this.getRequest(this.settings.url + this.resources.PROFILE_URI + email);
+				return this.getRequest(this.storeUrl + this.resources.PROFILE_URI + email);
 			},
 			'getOrders' : function(customer_id) {
-				return this.getRequest(this.settings.url + this.resources.RECENT_ORDERS_URI + customer_id);
+				return this.getRequest(this.storeUrl + this.resources.RECENT_ORDERS_URI + customer_id);
 			}
 		},
 
@@ -35,6 +37,17 @@
 			}
 		},
 
+		dataChanged: function() {
+			var ticketSubject = this.ticket().subject();
+			if (_.isUndefined(ticketSubject)) { return; }
+			var requester = this.ticket().requester();
+			if (_.isUndefined(requester)) { return; }
+			var requesterEmail = this.ticket().requester().email();
+			if (_.isUndefined(requesterEmail)) return;
+			if (this.storeUrl === '') { this.storeUrl = this.checkStoreUrl(this.settings.url); }
+			this.ajax('getProfile', requesterEmail);
+		},
+
 		getRequest: function(resource) {
 			return {
 				headers  : {
@@ -46,11 +59,24 @@
 			};
 		},
 
+		checkStoreUrl: function(url) {
+			// First, lets make sure there is no trailing slash, we'll add one later.
+			if (url.slice(-1) === '/') { url = url.slice(0, -1); }
+			// Test whether we have a front-controller reference here.
+			if (url.indexOf('index.php') === -1)
+			{
+				// Nothing to do, the front-controller isn't in the url, pass it back unaltered.
+				return url;
+			}
+			url = url.replace(/\/index.php/g, '');
+			return url;
+		},
+
 		handleGetProfile: function(data) {
 			if (_.isUndefined(data[0])) return;
 			this.profileData = data[0];
 			this.profileData.notes = data[0].notes;
-			this.profileData.customer_uri = helpers.fmt(this.resources.CUSTOMER_URI,this.settings.url,this.profileData.id,this.profileData.id);
+			this.profileData.customer_uri = helpers.fmt(this.resources.CUSTOMER_URI,this.storeUrl,this.profileData.id,this.profileData.id);
 			this.ajax('getOrders', this.profileData.id);
 		},
 
@@ -66,7 +92,7 @@
 			}
 
 			_.each(this.profileData.recentOrders, function(order) {
-				order.uri = helpers.fmt(this.resources.ORDER_URI,this.settings.url,order.id,order.id);
+				order.uri = helpers.fmt(this.resources.ORDER_URI,this.storeUrl,order.id,order.id);
 			}, this);
 
 			this.checkTicketOrder(data);
@@ -94,16 +120,6 @@
 					}
 				}
 			}
-		},
-
-		dataChanged: function() {
-			var ticketSubject = this.ticket().subject();
-			if (_.isUndefined(ticketSubject)) { return; }
-			var requester = this.ticket().requester();
-			if (_.isUndefined(requester)) { return; }
-			var requesterEmail = this.ticket().requester().email();
-			if (_.isUndefined(requesterEmail)) return;
-			this.ajax('getProfile', requesterEmail);
 		},
 
 		showError: function(title, msg) {
