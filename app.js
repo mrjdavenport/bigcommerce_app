@@ -75,8 +75,15 @@
 		handleGetProfile: function(data) {
 			if (_.isUndefined(data[0])) return;
 			this.profileData = data[0];
-			this.profileData.notes = data[0].notes;
+
+			if (data[0].notes === "") { 
+				this.profileData.notes = "No notes yet.";
+			} else {
+				this.profileData.notes = data[0].notes;
+			}
+
 			this.profileData.customer_uri = helpers.fmt(this.resources.CUSTOMER_URI,this.storeUrl,this.profileData.id,this.profileData.id);
+			this.profileData.ordersCount = 0;
 			this.ajax('getOrders', this.profileData.id);
 		},
 
