@@ -66,6 +66,23 @@
 			_.each(this.profileData.recentOrders, function(order) {
 				order.uri = helpers.fmt(this.resources.ORDER_URI,this.settings.url,order.id,order.id);
 			}, this);
+
+			this.checkTicketOrder(data);
+		},
+
+		checkTicketOrder : function(data) {
+			var customFieldName, orderId;
+
+			if (this.settings.order_id_field_id) {
+				customFieldName = 'custom_field_' + this.settings.order_id_field_id;
+				orderId = this.ticket().customField(customFieldName);
+
+				if (orderId) {
+					this.profileData.ticketOrder = _.find(data, function(order){
+						return (order.id === orderId);
+					});
+				}
+			}
 		},
 
 		dataChanged: function() {

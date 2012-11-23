@@ -1,6 +1,12 @@
 {
 	"app": {
-		"description": "Displays customer and order details from BigCommerce."
+		"description": "Displays customer and order details from BigCommerce.",
+		"parameters": {
+			"url"               : { "label": "Store URL" },
+			"username"      	: { "label": "Username" },
+			"api_token"      	: { "label": "API Token" },
+			"order_id_field_id" : { "label": "Order Number Field ID" }
+    	}
     },
 
     "global": {
@@ -17,7 +23,16 @@
 
 	"orders": {
 		"id"        : "RECENT ORDERS",
-		"status"    : "STATUS",
-		"count"		: "Orders count"
+		"status"    : "STATUS"
+	},
+
+	"order": {
+		"status"   			: "Status",
+		"count"				: "Orders count",
+		"ticket"			: "Order details for",
+		"subtotal_inc_tax"	: "Subtotal (inc. tax)",
+		"total_inc_tax"		: "Total (inc. tax)",
+		"date_created"		: "Date Created",
+		"date_shipped"		: "Date Shipped"
 	}
 }

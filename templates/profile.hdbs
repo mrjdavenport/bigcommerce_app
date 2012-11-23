@@ -22,9 +22,35 @@
 	</table>
 	{{/if}}
 
-	<h5>{{t "orders.count"}}</h5>
+	<h5>{{t "order.count"}}</h5>
 	<p>{{ordersCount}}</p>
 
 	<h5>{{t "customer.notes"}}</h5>
 	<p>{{notes}}</p>
+
+	{{#if ticketOrder}}
+
+		<hr/>
+
+		<h5>{{t "order.ticket"}} <a href="{{ticketOrder.uri}}" target="_blank">#{{ticketOrder.id}}</a></h5>
+
+		<h5>{{t "order.status"}}</h5>
+		<p>{{ticketOrder.status}}</p>
+
+		<h5>{{t "order.subtotal_inc_tax"}}</h5>
+		<p>{{ticketOrder.subtotal_inc_tax}}</p>
+
+		<h5>{{t "order.total_inc_tax"}}</h5>
+		<p>{{ticketOrder.total_inc_tax}}</p>
+
+		<h5>{{t "order.date_created"}}</h5>
+		<p>{{ticketOrder.date_created}}</p>
+
+		{{#if ticketOrder.date_shipped}}
+			<h5>{{t "order.date_shipped"}}</h5>
+			<p>{{ticketOrder.date_shipped}}</p>
+		{{/if}}
+
+	{{/if}}
+
 </div>
