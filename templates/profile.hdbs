@@ -15,7 +15,7 @@
 			{{#recentOrders}}
 				<tr class="_tooltip" data-placement="top">
 					<td><a href="{{uri}}" target="_blank">#{{id}}</td>
-					<td><span class="badge">{{status}}</a></td>
+					<td><span class="badge badge-{{status_id}}">{{status}}</a></td>
 				</tr>
 			{{/recentOrders}}
 		</tbody>
