@@ -14,7 +14,8 @@
 			"title"     : "An error occurred",
 			"message"   : "Please try the previous action again.",
 			"customerNotFound" : "Customer does not exist."
-		}
+		},
+		"loading"     : "Loading customer data..."
 	},
 
 	"customer" : {

@@ -2,6 +2,8 @@
 
 	return {
 
+		defaultState: 'loading',
+
 		profileData: {},
 
 		resources: {
@@ -79,7 +81,7 @@
 
 				if (orderId) {
 					this.profileData.ticketOrder = _.find(data, function(order){
-						return (order.id === orderId);
+						return (order.id == orderId);
 					});
 				}
 			}
