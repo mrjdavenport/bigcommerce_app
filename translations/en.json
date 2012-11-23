@@ -5,7 +5,7 @@
 			"url"               : { "label": "Store URL" },
 			"username"      	: { "label": "Username" },
 			"api_token"      	: { "label": "API Token" },
-			"order_id_field_id" : { "label": "Order Number Field ID" }
+			"order_id_field_id" : { "label": "Order ID Field ID" }
     	}
     },
 

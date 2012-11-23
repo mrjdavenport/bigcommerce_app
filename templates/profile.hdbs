@@ -38,10 +38,10 @@
 		<p>{{ticketOrder.status}}</p>
 
 		<h5>{{t "order.subtotal_inc_tax"}}</h5>
-		<p>{{ticketOrder.subtotal_inc_tax}}</p>
+		<p>{{ticketOrder.subtotal_inc_tax}} {{ticketOrder.currency_code}}</p>
 
 		<h5>{{t "order.total_inc_tax"}}</h5>
-		<p>{{ticketOrder.total_inc_tax}}</p>
+		<p>{{ticketOrder.total_inc_tax}} {{ticketOrder.currency_code}}</p>
 
 		<h5>{{t "order.date_created"}}</h5>
 		<p>{{ticketOrder.date_created}}</p>
