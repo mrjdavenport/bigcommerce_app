@@ -14,8 +14,8 @@
 		<tbody>
 			{{#recentOrders}}
 				<tr class="_tooltip" data-placement="top">
-					<td><a href="{{uri}}" target="_blank">#{{id}}</td>
-					<td><span class="badge badge-{{status_id}}">{{status}}</a></td>
+					<td><a href="{{uri}}" target="_blank">#{{id}}</a></td>
+					<td><span class="badge badge-{{status_id}}">{{status}}</span></td>
 				</tr>
 			{{/recentOrders}}
 		</tbody>
@@ -32,10 +32,10 @@
 
 		<hr/>
 
-		<h5>{{t "order.ticket"}} <a href="{{ticketOrder.uri}}" target="_blank">#{{ticketOrder.id}}</a></h5>
+		<h4>{{t "order.ticket"}} <a href="{{ticketOrder.uri}}" target="_blank">#{{ticketOrder.id}}</a></h4>
 
 		<h5>{{t "order.status"}}</h5>
-		<p>{{ticketOrder.status}}</p>
+		<p><span class="badge badge-{{ticketOrder.status_id}}">{{ticketOrder.status}}</span></p>
 
 		<h5>{{t "order.subtotal_inc_tax"}}</h5>
 		<p>{{ticketOrder.subtotal_inc_tax}} {{ticketOrder.currency_code}}</p>
