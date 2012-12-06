@@ -2,6 +2,8 @@
 
 	return {
 
+		errorCodes: _.range(400,416),
+
 		currAttempt : 0,
 
 		MAX_ATTEMPTS : 20,
@@ -135,6 +137,13 @@
 
 		handleGetProfile: function(data) {
 			if (_.isUndefined(data[0])) return;
+
+			// checks if status returned a HTTP error instead of order status (proxy bug)
+			if (_.indexOf(this.errorCodes, data[0].status) !== -1 && !_.isUndefined(data[0].message)) {
+				this.showError(this.I18n.t('global.error.title'),data[0].message);
+				return;
+			}
+
 			this.profileData = data[0];
 
 			if (data[0].notes === "") { 
