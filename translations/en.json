@@ -13,9 +13,11 @@
 		"error": {
 			"title"     : "An error occurred",
 			"message"   : "Please try the previous action again.",
-			"customerNotFound" : "Customer does not exist."
+			"customerNotFound" : "Customer does not exist.",
+			"data"      : "Ticket data could not be read."
 		},
-		"loading"     : "Loading customer data..."
+		"loading"     : "Loading customer data...",
+		"requesting"  : "Requesting customer data from BigCommerce..."
 	},
 
 	"customer" : {
