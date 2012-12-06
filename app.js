@@ -2,6 +2,12 @@
 
 	return {
 
+		errorCodes: _.range(400,416),
+
+		currAttempt : 0,
+
+		MAX_ATTEMPTS : 20,
+
 		defaultState: 'loading',
 
 		profileData: {},
@@ -9,10 +15,10 @@
 		storeUrl: '',
 
 		resources: {
-			PROFILE_URI			: '/api/v2/customers.json?email=',
+			PROFILE_URI				: '/api/v2/customers.json?email=',
 			RECENT_ORDERS_URI	: '/api/v2/orders.json?customer_id=',
-			CUSTOMER_URI		: '%@/admin/index.php?ToDo=searchCustomersRedirect&idFrom=%@&idTo=%@',
-			ORDER_URI			: '%@/admin/index.php?ToDo=searchOrdersRedirect&orderFrom=%@&orderTo=%@'
+			CUSTOMER_URI			: '%@/admin/index.php?ToDo=searchCustomersRedirect&idFrom=%@&idTo=%@',
+			ORDER_URI					: '%@/admin/index.php?ToDo=searchOrdersRedirect&orderFrom=%@&orderTo=%@'
 		},
 
 		requests: {
@@ -25,27 +31,84 @@
 		},
 
 		events: {
-			'app.activated'						: 'dataChanged',
-			'ticket.subject.changed'			: 'dataChanged',
-			'ticket.requester.email.changed'	: 'dataChanged',
-			'getProfile.fail'					: 'handleGetProfileError',
-			'getProfile.done'					: 'handleGetProfile',
-			'getOrders.done'					: 'handleGetOrders',
+			'app.activated'             : 'init',
+			'requiredProperties.ready'  : 'queryBigCommerce',
+			'getProfile.fail'						: 'handleGetProfileError',
+			'getProfile.done'						: 'handleGetProfile',
+			'getOrders.done'						: 'handleGetOrders',
 
 			'getOrders.always'					: function() {
 				this.switchTo('profile',this.profileData);
 			}
 		},
 
-		dataChanged: function() {
-			var ticketSubject = this.ticket().subject();
-			if (_.isUndefined(ticketSubject)) { return; }
-			var requester = this.ticket().requester();
-			if (_.isUndefined(requester)) { return; }
-			var requesterEmail = this.ticket().requester().email();
-			if (_.isUndefined(requesterEmail)) return;
-			if (this.storeUrl === '') { this.storeUrl = this.checkStoreUrl(this.settings.url); }
-			this.ajax('getProfile', requesterEmail);
+		requiredProperties : [
+			'ticket.requester.email'
+		],
+
+		init: function(data){
+			if(!data.firstLoad){
+				return;
+			}
+
+			this.storeUrl = this.checkStoreUrl(this.settings.url);
+
+			this.allRequiredPropertiesExist();
+		},
+
+		queryBigCommerce: function(){
+			this.switchTo('requesting');
+			this.ajax('getProfile', this.ticket().requester().email());
+		},
+
+		allRequiredPropertiesExist: function() {
+			if (this.requiredProperties.length > 0) {
+				var valid = this.validateRequiredProperty(this.requiredProperties[0]);
+
+				// prop is valid, remove from array
+				if (valid) {
+					this.requiredProperties.shift();
+				}
+
+				if (this.requiredProperties.length > 0 && this.currAttempt < this.MAX_ATTEMPTS) {
+					if (!valid) {
+						++this.currAttempt;
+					}
+
+					_.delay(_.bind(this.allRequiredPropertiesExist, this), 100);
+					return;
+				}
+			}
+
+			if (this.currAttempt < this.MAX_ATTEMPTS) {
+				this.trigger('requiredProperties.ready');
+			} else {
+				this.showError(this.I18n.t('global.error.title'), this.I18n.t('global.error.data'));
+			}
+		},
+
+		validateRequiredProperty: function(property) {
+			var parts = property.split('.');
+			var part = '', obj = this;
+
+			while (parts.length) {
+				part = parts.shift();
+				try {
+					obj = obj[part]();
+				} catch (e) {
+					return false;
+				}
+				// check if property is invalid
+				if (parts.length > 0 && !_.isObject(obj)) {
+					return false;
+				}
+				// check if value returned from property is invalid
+				if (parts.length === 0 && (_.isNull(obj) || _.isUndefined(obj) || obj === '' || obj === 'no')) {
+					return false;
+				}
+			}
+
+			return true;
 		},
 
 		getRequest: function(resource) {
@@ -74,6 +137,13 @@
 
 		handleGetProfile: function(data) {
 			if (_.isUndefined(data[0])) return;
+
+			// checks if status returned a HTTP error instead of order status (proxy bug)
+			if (_.indexOf(this.errorCodes, data[0].status) !== -1 && !_.isUndefined(data[0].message)) {
+				this.showError(this.I18n.t('global.error.title'),data[0].message);
+				return;
+			}
+
 			this.profileData = data[0];
 
 			if (data[0].notes === "") { 
