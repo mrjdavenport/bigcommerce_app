@@ -5,7 +5,7 @@ This App displays Bigcommerce customer and order details in Zendesk.
 
 ## Installing
 
-For installation details please refer to install the [Bigcommerce for Zendesk App](https://support.zendesk.com/entries/22586097-installing-the-bigcommerce-for-zendesk-app).
+Please refer to the [installation guide](https://support.zendesk.com/entries/22586097-installing-the-bigcommerce-for-zendesk-app).
 
 ## Contributing
 
