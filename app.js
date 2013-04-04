@@ -42,14 +42,14 @@
       }
     },
 
-    requiredProperties : [
-      'ticket.requester.email'
-    ],
-
     init: function(data){
       if(!data.firstLoad){
         return;
       }
+
+      this.requiredProperties = [
+        'ticket.requester.email'
+      ];
 
       this.storeUrl = this.checkStoreUrl(this.settings.url);
 
@@ -146,7 +146,7 @@
 
       this.profileData = data[0];
 
-      if (data[0].notes === "") { 
+      if (data[0].notes === "") {
         this.profileData.notes = "No notes yet.";
       } else {
         this.profileData.notes = data[0].notes;
