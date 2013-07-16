@@ -1,0 +1,92 @@
+---
+title: "BigCommerce App"
+packages:
+  - default
+  - app_bigcommerce_app
+
+parts:
+  - translation:
+      key: "txt.apps.bigcommerce_app.app.description"
+      title: "This is the App description in the marketplace"
+      value: "Displays customer and order details from BigCommerce."
+  - translation:
+      key: "txt.apps.bigcommerce_app.app.parameters.url.label"
+      title: "URL of their BigCommerce online store to provide in the app settings"
+      value: "Store URL"
+  - translation:
+      key: "txt.apps.bigcommerce_app.app.parameters.username.label"
+      title: "this is the BigCommerce username of the person setting up the zendesk app for the settings"
+      value: "Username"
+  - translation:
+      key: "txt.apps.bigcommerce_app.app.parameters.api_token.label"
+      title: "this is the BigCommerce API token of the person setting up the zendesk app for the settings"
+      value: "API Token"
+  - translation:
+      key: "txt.apps.bigcommerce_app.app.parameters.order_id_field_id.label"
+      title: "This is the field in the app settings in their zendesk that will store the order ID of a bigcommerce order when they get a zendesk ticket"
+      value: "Order ID Field ID"
+  - translation:
+      key: "txt.apps.bigcommerce_app.global.error.title"
+      title: "error message title"
+      value: "An error occurred"
+  - translation:
+      key: "txt.apps.bigcommerce_app.global.error.message"
+      title: "error message explanation text asking them to retry"
+      value: "Please try the previous action again."
+  - translation:
+      key: "txt.apps.bigcommerce_app.global.error.customerNotFound"
+      title: "error message explanation text"
+      value: "Customer could not be found."
+  - translation:
+      key: "txt.apps.bigcommerce_app.global.error.data"
+      title: "error message explanation text"
+      value: "Ticket data could not be read."
+  - translation:
+      key: "txt.apps.bigcommerce_app.global.loading"
+      title: "loading text in the app"
+      value: "Loading customer data..."
+  - translation:
+      key: "txt.apps.bigcommerce_app.global.requesting"
+      title: "loading text in the app"
+      value: "Requesting customer data from BigCommerce..."
+  - translation:
+      key: "txt.apps.bigcommerce_app.customer.notes"
+      title: "Notes field in the app"
+      value: "Notes"
+  - translation:
+      key: "txt.apps.bigcommerce_app.orders.id"
+      title: "Recent order table, this will list the 5 most recent order ids and their status"
+      value: "RECENT ORDERS"
+  - translation:
+      key: "txt.apps.bigcommerce_app.orders.status"
+      title: "status table, this will list the 5 most recent order ids and their status"
+      value: "STATUS"
+  - translation:
+      key: "txt.apps.bigcommerce_app.order.status"
+      title: "This is the order status"
+      value: "Status"
+  - translation:
+      key: "txt.apps.bigcommerce_app.order.count"
+      title: "this is the total number of orders this customer has made"
+      value: "Orders count"
+  - translation:
+      key: "txt.apps.bigcommerce_app.order.ticket"
+      title: "these are the details of the order for this customer, this is the title to a long list of info about the order"
+      value: "Order details for"
+  - translation:
+      key: "txt.apps.bigcommerce_app.order.subtotal_inc_tax"
+      title: "subtotal (a number will be displayed there)"
+      value: "Subtotal (inc. tax)"
+  - translation:
+      key: "txt.apps.bigcommerce_app.order.total_inc_tax"
+      title: "subtotal (a number will be displayed there)"
+      value: "Total (inc. tax)"
+  - translation:
+      key: "txt.apps.bigcommerce_app.order.date_created"
+      title: "this is the date the order was put through"
+      value: "Date Created"
+  - translation:
+      key: "txt.apps.bigcommerce_app.order.date_shipped"
+      title: "this is the date the order was shipped"
+      value: "Date Shipped"
+
