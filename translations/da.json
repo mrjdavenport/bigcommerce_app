@@ -1,0 +1,45 @@
+{
+  "app": {
+    "description": "Viser kunde- og ordredetaljer fra BigCommerce.",
+    "parameters": {
+      "url": {
+        "label": "Forretnings-URL"
+      },
+      "username": {
+        "label": "Brugernavn"
+      },
+      "api_token": {
+        "label": "API-token"
+      },
+      "order_id_field_id": {
+        "label": "Id til feltet Ordre-id"
+      }
+    }
+  },
+  "global": {
+    "error": {
+      "title": "Der forekom en fejl",
+      "message": "Prøv forrige handling igen.",
+      "customerNotFound": "Kunden blev ikke fundet.",
+      "data": "Ticket-dataene kunne ikke læses."
+    },
+    "loading": "Indlæser kundedata…",
+    "requesting": "Anmoder om kundedata fra BigCommerce..."
+  },
+  "customer": {
+    "notes": "Notater"
+  },
+  "orders": {
+    "id": "SENESTE ORDRER",
+    "status": "STATUS"
+  },
+  "order": {
+    "status": "Status",
+    "count": "Ordreantal",
+    "ticket": "Ordredetaljer for",
+    "subtotal_inc_tax": "Subtotal (inkl. moms)",
+    "total_inc_tax": "Total (inkl. moms)",
+    "date_created": "Oprettelsesdato",
+    "date_shipped": "Forsendelsesdato"
+  }
+}
