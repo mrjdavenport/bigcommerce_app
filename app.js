@@ -133,6 +133,7 @@
       }
 
       _.each(this.profileData.recentOrders, function(order) {
+        order.status_locale = this.I18n.t('order.statuses.%@'.fmt(order.status_id));
         order.uri = helpers.fmt(this.resources.ORDER_URI,this.storeUrl,order.id,order.id);
       }, this);
 
