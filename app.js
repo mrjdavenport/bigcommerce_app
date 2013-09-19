@@ -33,7 +33,10 @@
       'getOrders.done'            : 'handleGetOrders',
 
       'getOrders.always'          : function() {
-        this.switchTo('profile',this.profileData);
+        if (this.profileData.notes === 'No notes yet.') {
+          this.profileData.notes = this.I18n.t('customer.noNotes');
+        }
+        this.switchTo('profile', this.profileData);
       }
     },
 
