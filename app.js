@@ -3,15 +3,10 @@
   return {
 
     errorCodes: _.range(400,416),
-
     currAttempt : 0,
-
     MAX_ATTEMPTS : 20,
-
     defaultState: 'loading',
-
     profileData: {},
-
     storeUrl: '',
 
     resources: {
@@ -53,38 +48,14 @@
 
       this.storeUrl = this.checkStoreUrl(this.settings.url);
 
-      this.allRequiredPropertiesExist();
+      _.defer((function() {
+        this.trigger('requiredProperties.ready');
+      }).bind(this));
     },
 
     queryBigCommerce: function(){
       this.switchTo('requesting');
       this.ajax('getProfile', this.ticket().requester().email());
-    },
-
-    allRequiredPropertiesExist: function() {
-      if (this.requiredProperties.length > 0) {
-        var valid = this.validateRequiredProperty(this.requiredProperties[0]);
-
-        // prop is valid, remove from array
-        if (valid) {
-          this.requiredProperties.shift();
-        }
-
-        if (this.requiredProperties.length > 0 && this.currAttempt < this.MAX_ATTEMPTS) {
-          if (!valid) {
-            ++this.currAttempt;
-          }
-
-          _.delay(_.bind(this.allRequiredPropertiesExist, this), 100);
-          return;
-        }
-      }
-
-      if (this.currAttempt < this.MAX_ATTEMPTS) {
-        this.trigger('requiredProperties.ready');
-      } else {
-        this.showError(this.I18n.t('global.error.title'), this.I18n.t('global.error.data'));
-      }
     },
 
     safeGetPath: function(propertyPath) {
