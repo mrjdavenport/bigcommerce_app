@@ -27,7 +27,6 @@
 
     events: {
       'app.activated'             : 'init',
-      'requiredProperties.ready'  : 'queryBigCommerce',
       'getProfile.fail'           : 'handleGetProfileError',
       'getProfile.done'           : 'handleGetProfile',
       'getOrders.done'            : 'handleGetOrders',
@@ -51,9 +50,7 @@
 
       this.storeUrl = this.checkStoreUrl(this.settings.url);
 
-      _.defer((function() {
-        this.trigger('requiredProperties.ready');
-      }).bind(this));
+      _.defer(this.queryBigCommerce.bind(this));
     },
 
     queryBigCommerce: function(){
