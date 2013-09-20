@@ -28,7 +28,7 @@
   },
   "customer": {
     "notes": "Notes",
-    "noNotes": "No notes yet."
+    "no_notes": "No notes yet."
   },
   "orders": {
     "id": "RECENT ORDERS",

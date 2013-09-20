@@ -33,7 +33,7 @@
 
       'getOrders.always'          : function() {
         if (this.profileData.notes === 'No notes yet.') {
-          this.profileData.notes = this.I18n.t('customer.noNotes');
+          this.profileData.notes = this.I18n.t('customer.no_notes');
         }
         this.switchTo('profile', this.profileData);
       }
