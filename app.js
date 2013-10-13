@@ -96,7 +96,10 @@
       return url;
     },
 
-    handleGetProfile: function(data) {
+    handleGetProfile: function(data, txt, resp) {
+      if (resp.status === 204) {
+        this.handleGetProfileError();
+      }
       if (_.isUndefined(data[0])) return;
 
       // checks if status returned a HTTP error instead of order status (proxy bug)
