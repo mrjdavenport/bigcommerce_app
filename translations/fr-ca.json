@@ -1,0 +1,45 @@
+{
+  "app": {
+    "description": "Affiche les détails du client et de la commande de BigCommerce.",
+    "parameters": {
+      "url": {
+        "label": "URL du magasin"
+      },
+      "username": {
+        "label": "Nom d’utilisateur"
+      },
+      "api_token": {
+        "label": "Jeton API"
+      },
+      "order_id_field_id": {
+        "label": "ID de champ de l’ID de commande"
+      }
+    }
+  },
+  "global": {
+    "error": {
+      "title": "Une erreur est survenue.",
+      "message": "Veuillez réessayer l’action précédente.",
+      "customerNotFound": "Client introuvable.",
+      "data": "Impossible de lire les données du billet."
+    },
+    "loading": "Chargement des données client en cours...",
+    "requesting": "Demande des données client à BigCommerce en cours…"
+  },
+  "customer": {
+    "notes": "Remarques"
+  },
+  "orders": {
+    "id": "COMMANDES RÉCENTES",
+    "status": "STATUT"
+  },
+  "order": {
+    "status": "Statut",
+    "count": "Nombre de commandes",
+    "ticket": "Détails de la commande pour",
+    "subtotal_inc_tax": "Sous-total (TTC)",
+    "total_inc_tax": "Total (TTC)",
+    "date_created": "Date de création",
+    "date_shipped": "Date d'expédition"
+  }
+}
