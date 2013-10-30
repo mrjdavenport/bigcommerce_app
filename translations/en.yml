@@ -54,6 +54,10 @@ parts:
       title: "Notes field in the app"
       value: "Notes"
   - translation:
+      key: "txt.apps.bigcommerce_app.customer.no_notes"
+      title: "Placeholder message when no notes are present"
+      value: "No notes yet."
+  - translation:
       key: "txt.apps.bigcommerce_app.orders.id"
       title: "Recent order table, this will list the 5 most recent order ids and their status"
       value: "RECENT ORDERS"
