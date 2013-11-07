@@ -27,7 +27,8 @@
     "requesting": "正在从 BigCommerce 请求客户数据……"
   },
   "customer": {
-    "notes": "注释"
+    "notes": "注释",
+    "no_notes": "还没有注释。"
   },
   "orders": {
     "id": "最近的订单",

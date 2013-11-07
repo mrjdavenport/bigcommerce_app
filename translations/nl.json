@@ -27,7 +27,8 @@
     "requesting": "Klantgegevens opvragen bij BigCommerce..."
   },
   "customer": {
-    "notes": "Notities"
+    "notes": "Notities",
+    "no_notes": "Nog geen notities."
   },
   "orders": {
     "id": "RECENTE ORDERS",

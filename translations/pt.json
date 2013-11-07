@@ -27,7 +27,8 @@
     "requesting": "Solicitando os dados do cliente do BigCommerce..."
   },
   "customer": {
-    "notes": "Observações"
+    "notes": "Observações",
+    "no_notes": "Nenhuma observação ainda."
   },
   "orders": {
     "id": "PEDIDOS RECENTES",

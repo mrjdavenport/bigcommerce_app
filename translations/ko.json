@@ -27,7 +27,8 @@
     "requesting": "BigCommerce에서 고객 데이터 요청…"
   },
   "customer": {
-    "notes": "메모"
+    "notes": "메모",
+    "no_notes": "메모가 없습니다."
   },
   "orders": {
     "id": "최근 주문",

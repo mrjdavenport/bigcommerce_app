@@ -27,7 +27,8 @@
     "requesting": "Kundendaten von BigCommerce anfordern..."
   },
   "customer": {
-    "notes": "Notizen"
+    "notes": "Notizen",
+    "no_notes": "Noch keine Notizen."
   },
   "orders": {
     "id": "JÜNGSTE BESTELLUNGEN",

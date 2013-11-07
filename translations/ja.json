@@ -27,7 +27,8 @@
     "requesting": "BigCommerceから顧客データを要求しています..."
   },
   "customer": {
-    "notes": "メモ"
+    "notes": "メモ",
+    "no_notes": "まだメモがありません。"
   },
   "orders": {
     "id": "最近のご注文",

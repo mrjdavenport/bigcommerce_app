@@ -27,7 +27,8 @@
     "requesting": "Demande des données client à BigCommerce en cours…"
   },
   "customer": {
-    "notes": "Remarques"
+    "notes": "Remarques",
+    "no_notes": "Aucune note pour l’instant."
   },
   "orders": {
     "id": "COMMANDES RÉCENTES",

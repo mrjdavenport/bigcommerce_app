@@ -27,7 +27,8 @@
     "requesting": "Requesting customer data from BigCommerce..."
   },
   "customer": {
-    "notes": "Notes"
+    "notes": "Notes",
+    "no_notes": "No notes yet."
   },
   "orders": {
     "id": "RECENT ORDERS",

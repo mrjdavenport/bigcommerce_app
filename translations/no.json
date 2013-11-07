@@ -27,7 +27,8 @@
     "requesting": "Anmoder om kundedata fra BigCommerce..."
   },
   "customer": {
-    "notes": "Notater"
+    "notes": "Notater",
+    "no_notes": "Ingen notater endnu."
   },
   "orders": {
     "id": "SENESTE ORDRER",
