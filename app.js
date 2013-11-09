@@ -22,16 +22,20 @@
       },
       'getOrders' : function(customer_id) {
         return this.getRequest(this.storeUrl + this.resources.RECENT_ORDERS_URI + customer_id);
+      },
+      'userInfo': {
+        url: '/api/v2/users/me.json'
       }
     },
 
     events: {
-      'app.activated'             : 'init',
-      'getProfile.fail'           : 'handleGetProfileError',
-      'getProfile.done'           : 'handleGetProfile',
-      'getOrders.done'            : 'handleGetOrders',
+      'app.activated'   : 'init',
+      'getProfile.fail' : 'handleGetProfileError',
+      'getProfile.done' : 'handleGetProfile',
+      'getOrders.done'  : 'handleGetOrders',
+      'userInfo.done'   : 'handleUserInfo',
 
-      'getOrders.always'          : function() {
+      'getOrders.always': function() {
         if (this.profileData.notes === 'No notes yet.') {
           this.profileData.notes = this.I18n.t('customer.no_notes');
         }
@@ -39,18 +43,35 @@
       }
     },
 
+    onUserInfoDone: function(data) {
+      this.locale = data.user.locale;
+    },
+
+    localizeDate: function(date, params) {
+      var options = _.extend({
+        year: "numeric",
+        month: "numeric",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
+      }, params || {});
+      return new Date(date).toLocaleDateString(this.locale, options);
+    },
+
     init: function(data){
       if(!data.firstLoad){
         return;
       }
 
-      this.requiredProperties = [
-        'ticket.requester.email'
-      ];
+      this.ajax('userInfo').done(function() {
+        this.requiredProperties = [
+          'ticket.requester.email'
+        ];
 
-      this.storeUrl = this.checkStoreUrl(this.settings.url);
+        this.storeUrl = this.checkStoreUrl(this.settings.url);
 
-      _.defer(this.queryBigCommerce.bind(this));
+        _.defer(this.queryBigCommerce.bind(this));
+      }.bind(this));
     },
 
     queryBigCommerce: function(){
@@ -135,6 +156,8 @@
       _.each(this.profileData.recentOrders, function(order) {
         order.status_locale = this.I18n.t('order.statuses.%@'.fmt(order.status_id));
         order.uri = helpers.fmt(this.resources.ORDER_URI,this.storeUrl,order.id,order.id);
+        order.date_created_locale = this.localizeDate(order.date_created);
+        order.date_shipped_locale = this.localizeDate(order.date_modified);
       }, this);
 
       this.checkTicketOrder(data);
