@@ -98,7 +98,7 @@
 
     handleGetProfile: function(data, txt, resp) {
       if (resp.status === 204) {
-        this.handleGetProfileError();
+        return this.handleGetProfileError();
       }
       if (_.isUndefined(data[0])) return;
 
