@@ -44,11 +44,11 @@
     <p>{{ticketOrder.total_inc_tax}} {{ticketOrder.currency_code}}</p>
 
     <h5>{{t "order.date_created"}}</h5>
-    <p>{{ticketOrder.date_created}}</p>
+    <p>{{ticketOrder.date_created_locale}}</p>
 
     {{#if ticketOrder.date_shipped}}
       <h5>{{t "order.date_shipped"}}</h5>
-      <p>{{ticketOrder.date_shipped}}</p>
+      <p>{{ticketOrder.date_shipped_locale}}</p>
     {{/if}}
 
   {{/if}}
