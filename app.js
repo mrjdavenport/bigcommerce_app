@@ -43,7 +43,7 @@
       }
     },
 
-    onUserInfoDone: function(data) {
+    handleUserInfo: function(data) {
       this.locale = data.user.locale;
     },
 
