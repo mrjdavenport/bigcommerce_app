@@ -1,25 +1,29 @@
 ---
-title: "BigCommerce App"
+title: "Bigcommerce App"
 packages:
   - default
   - app_bigcommerce_app
 
 parts:
   - translation:
+      key: "txt.apps.bigcommerce_app.app.name"
+      title: "This is the App name"
+      value: "Bigcommerce"
+  - translation:
       key: "txt.apps.bigcommerce_app.app.description"
       title: "This is the App description in the marketplace"
-      value: "Displays customer and order details from BigCommerce."
+      value: "Displays customer and order details from Bigcommerce."
   - translation:
       key: "txt.apps.bigcommerce_app.app.parameters.url.label"
-      title: "URL of their BigCommerce online store to provide in the app settings"
+      title: "URL of their Bigcommerce online store to provide in the app settings"
       value: "Store URL"
   - translation:
       key: "txt.apps.bigcommerce_app.app.parameters.username.label"
-      title: "this is the BigCommerce username of the person setting up the zendesk app for the settings"
+      title: "this is the Bigcommerce username of the person setting up the zendesk app for the settings"
       value: "Username"
   - translation:
       key: "txt.apps.bigcommerce_app.app.parameters.api_token.label"
-      title: "this is the BigCommerce API token of the person setting up the zendesk app for the settings"
+      title: "this is the Bigcommerce API token of the person setting up the zendesk app for the settings"
       value: "API Token"
   - translation:
       key: "txt.apps.bigcommerce_app.app.parameters.order_id_field_id.label"
@@ -48,7 +52,7 @@ parts:
   - translation:
       key: "txt.apps.bigcommerce_app.global.requesting"
       title: "loading text in the app"
-      value: "Requesting customer data from BigCommerce..."
+      value: "Requesting customer data from Bigcommerce..."
   - translation:
       key: "txt.apps.bigcommerce_app.customer.notes"
       title: "Notes field in the app"
@@ -93,4 +97,55 @@ parts:
       key: "txt.apps.bigcommerce_app.order.date_shipped"
       title: "this is the date the order was shipped"
       value: "Date Shipped"
-
+  - translation:
+      key: "txt.apps.bigcommerce_app.order.statuses.0"
+      title: "Bigcommerce order status"
+      value: "Incomplete"
+  - translation:
+      key: "txt.apps.bigcommerce_app.order.statuses.1"
+      title: "Bigcommerce order status"
+      value: "Pending"
+  - translation:
+      key: "txt.apps.bigcommerce_app.order.statuses.2"
+      title: "Bigcommerce order status"
+      value: "Shipped"
+  - translation:
+      key: "txt.apps.bigcommerce_app.order.statuses.3"
+      title: "Bigcommerce order status"
+      value: "Partially Shipped"
+  - translation:
+      key: "txt.apps.bigcommerce_app.order.statuses.4"
+      title: "Bigcommerce order status"
+      value: "Refunded"
+  - translation:
+      key: "txt.apps.bigcommerce_app.order.statuses.5"
+      title: "Bigcommerce order status"
+      value: "Cancelled"
+  - translation:
+      key: "txt.apps.bigcommerce_app.order.statuses.6"
+      title: "Bigcommerce order status"
+      value: "Declined"
+  - translation:
+      key: "txt.apps.bigcommerce_app.order.statuses.7"
+      title: "Bigcommerce order status"
+      value: "Awaiting Payment"
+  - translation:
+      key: "txt.apps.bigcommerce_app.order.statuses.8"
+      title: "Bigcommerce order status"
+      value: "Awaiting Pickup"
+  - translation:
+      key: "txt.apps.bigcommerce_app.order.statuses.9"
+      title: "Bigcommerce order status"
+      value: "Awaiting Shipment"
+  - translation:
+      key: "txt.apps.bigcommerce_app.order.statuses.10"
+      title: "Bigcommerce order status"
+      value: "Completed"
+  - translation:
+      key: "txt.apps.bigcommerce_app.order.statuses.11"
+      title: "Bigcommerce order status"
+      value: "Awaiting Fulfillment"
+  - translation:
+      key: "txt.apps.bigcommerce_app.order.statuses.12"
+      title: "Bigcommerce order status"
+      value: "Manual Verification Required"

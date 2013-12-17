@@ -1,6 +1,7 @@
 {
   "app": {
-    "description": "Displays customer and order details from BigCommerce.",
+    "name": "Bigcommerce",
+    "description": "Displays customer and order details from Bigcommerce.",
     "parameters": {
       "url": {
         "label": "Store URL"
@@ -24,7 +25,7 @@
       "data": "Ticket data could not be read."
     },
     "loading": "Loading customer data...",
-    "requesting": "Requesting customer data from BigCommerce..."
+    "requesting": "Requesting customer data from Bigcommerce..."
   },
   "customer": {
     "notes": "Notes",
