@@ -1,0 +1,46 @@
+{
+  "app": {
+    "description": "显示来自 BigCommerce 的客户和订单详情。",
+    "parameters": {
+      "url": {
+        "label": "商店 URL"
+      },
+      "username": {
+        "label": "用户名"
+      },
+      "api_token": {
+        "label": "API 密钥"
+      },
+      "order_id_field_id": {
+        "label": "订单 ID 字段 ID"
+      }
+    }
+  },
+  "global": {
+    "error": {
+      "title": "发生错误",
+      "message": "请重试先前的操作。",
+      "customerNotFound": "无法找到客户。",
+      "data": "无法读取工单数据。"
+    },
+    "loading": "正在加载客户数据……",
+    "requesting": "正在从 BigCommerce 请求客户数据……"
+  },
+  "customer": {
+    "notes": "注释",
+    "no_notes": "还没有注释。"
+  },
+  "orders": {
+    "id": "最近的订单",
+    "status": "状态"
+  },
+  "order": {
+    "status": "状态",
+    "count": "订单数",
+    "ticket": "订单详情",
+    "subtotal_inc_tax": "小计（含税）",
+    "total_inc_tax": "共计（含税）",
+    "date_created": "创建日期",
+    "date_shipped": "发货日期"
+  }
+}

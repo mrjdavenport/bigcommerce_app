@@ -1,0 +1,46 @@
+{
+  "app": {
+    "description": "Visualizza informazioni dettagliate su cliente e ordine da BigCommerce.",
+    "parameters": {
+      "url": {
+        "label": "URL negozio"
+      },
+      "username": {
+        "label": "Nome utente"
+      },
+      "api_token": {
+        "label": "Token API"
+      },
+      "order_id_field_id": {
+        "label": "ID campo ID ordine"
+      }
+    }
+  },
+  "global": {
+    "error": {
+      "title": "Si è verificato un errore",
+      "message": "Riprova l’azione precedente.",
+      "customerNotFound": "Cliente non trovato.",
+      "data": "Impossibile leggere i dati del ticket."
+    },
+    "loading": "Caricamento dati cliente...",
+    "requesting": "Richiesta dati cliente da BigCommerce in corso..."
+  },
+  "customer": {
+    "notes": "Note",
+    "no_notes": "Nessuna nota disponibile."
+  },
+  "orders": {
+    "id": "ORDINI RECENTI",
+    "status": "STATO"
+  },
+  "order": {
+    "status": "Stato",
+    "count": "Numero di ordini",
+    "ticket": "Dettagli ordine per",
+    "subtotal_inc_tax": "Subtotale (IVA inclusa)",
+    "total_inc_tax": "Totale (IVA inclusa)",
+    "date_created": "Data di creazione",
+    "date_shipped": "Data di spedizione"
+  }
+}

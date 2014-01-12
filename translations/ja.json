@@ -1,0 +1,46 @@
+{
+  "app": {
+    "description": "BigCommerceからの顧客および注文の詳細を表示します。",
+    "parameters": {
+      "url": {
+        "label": "ストアのURL"
+      },
+      "username": {
+        "label": "ユーザー名"
+      },
+      "api_token": {
+        "label": "APIトークン"
+      },
+      "order_id_field_id": {
+        "label": "注文IDフィールドID"
+      }
+    }
+  },
+  "global": {
+    "error": {
+      "title": "エラーが発生しました",
+      "message": "前のアクションをもう一度実行してください。",
+      "customerNotFound": "カスタマーが見つかりませんでした。",
+      "data": "チケットデータを読み取ることができませんでした。"
+    },
+    "loading": "顧客データを読み込み中...",
+    "requesting": "BigCommerceから顧客データを要求しています..."
+  },
+  "customer": {
+    "notes": "メモ",
+    "no_notes": "まだメモがありません。"
+  },
+  "orders": {
+    "id": "最近のご注文",
+    "status": "ステータス"
+  },
+  "order": {
+    "status": "ステータス",
+    "count": "注文数",
+    "ticket": "注文の詳細",
+    "subtotal_inc_tax": "小計（税込）",
+    "total_inc_tax": "合計（税込）",
+    "date_created": "作成日",
+    "date_shipped": "出荷日"
+  }
+}
