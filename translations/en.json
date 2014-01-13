@@ -21,8 +21,7 @@
     "error": {
       "title": "An error occurred",
       "message": "Please try the previous action again.",
-      "customerNotFound": "Customer could not be found.",
-      "data": "Ticket data could not be read."
+      "customerNotFound": "Customer could not be found."
     },
     "loading": "Loading customer data...",
     "requesting": "Requesting customer data from Bigcommerce..."

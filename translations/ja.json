@@ -20,8 +20,7 @@
     "error": {
       "title": "エラーが発生しました",
       "message": "前のアクションをもう一度実行してください。",
-      "customerNotFound": "カスタマーが見つかりませんでした。",
-      "data": "チケットデータを読み取ることができませんでした。"
+      "customerNotFound": "カスタマーが見つかりませんでした。"
     },
     "loading": "顧客データを読み込み中...",
     "requesting": "BigCommerceから顧客データを要求しています..."

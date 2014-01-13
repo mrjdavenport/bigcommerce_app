@@ -20,8 +20,7 @@
     "error": {
       "title": "Si è verificato un errore",
       "message": "Riprova l’azione precedente.",
-      "customerNotFound": "Cliente non trovato.",
-      "data": "Impossibile leggere i dati del ticket."
+      "customerNotFound": "Cliente non trovato."
     },
     "loading": "Caricamento dati cliente...",
     "requesting": "Richiesta dati cliente da BigCommerce in corso..."

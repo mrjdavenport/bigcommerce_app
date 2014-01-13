@@ -20,8 +20,7 @@
     "error": {
       "title": "發生錯誤",
       "message": "請再試一次之前的操作。",
-      "customerNotFound": "找不到客戶。",
-      "data": "不能讀取工單資料。"
+      "customerNotFound": "找不到客戶。"
     },
     "loading": "客戶資料載入中……",
     "requesting": "正在從 BigCommerce 請求客戶資料……"
