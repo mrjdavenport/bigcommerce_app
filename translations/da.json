@@ -20,8 +20,7 @@
     "error": {
       "title": "Der forekom en fejl",
       "message": "Prøv forrige handling igen.",
-      "customerNotFound": "Kunden blev ikke fundet.",
-      "data": "Ticket-dataene kunne ikke læses."
+      "customerNotFound": "Kunden blev ikke fundet."
     },
     "loading": "Indlæser kundedata…",
     "requesting": "Anmoder om kundedata fra BigCommerce..."

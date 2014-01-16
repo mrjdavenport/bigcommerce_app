@@ -42,10 +42,6 @@ parts:
       title: "error message explanation text"
       value: "Customer could not be found."
   - translation:
-      key: "txt.apps.bigcommerce_app.global.error.data"
-      title: "error message explanation text"
-      value: "Ticket data could not be read."
-  - translation:
       key: "txt.apps.bigcommerce_app.global.loading"
       title: "loading text in the app"
       value: "Loading customer data..."

@@ -20,8 +20,7 @@
     "error": {
       "title": "Une erreur est survenue.",
       "message": "Veuillez réessayer l’action précédente.",
-      "customerNotFound": "Client introuvable.",
-      "data": "Impossible de lire les données du ticket."
+      "customerNotFound": "Client introuvable."
     },
     "loading": "Chargement des données client en cours...",
     "requesting": "Demande des données client à BigCommerce en cours…"
