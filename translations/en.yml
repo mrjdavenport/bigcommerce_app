@@ -3,6 +3,7 @@ title: "Bigcommerce App"
 packages:
   - default
   - app_bigcommerce_app
+  - classic
 
 parts:
   - translation:
