@@ -1,7 +1,6 @@
 (function() {
 
   return {
-
     errorCodes: _.range(400,416),
     currAttempt : 0,
     MAX_ATTEMPTS : 20,
@@ -36,9 +35,6 @@
       'userInfo.done'   : 'handleUserInfo',
 
       'getOrders.always': function() {
-        if (this.profileData.notes === 'No notes yet.') {
-          this.profileData.notes = this.I18n.t('customer.no_notes');
-        }
         this.switchTo('profile', this.profileData);
       }
     },
@@ -59,7 +55,7 @@
     },
 
     init: function(data){
-      if(!data.firstLoad){
+      if (!data.firstLoad) {
         return;
       }
 
@@ -132,7 +128,7 @@
       this.profileData = data[0];
 
       if (data[0].notes === "") {
-        this.profileData.notes = "No notes yet.";
+        this.profileData.notes = this.I18n.t('customer.no_notes');
       } else {
         this.profileData.notes = data[0].notes;
       }
@@ -154,7 +150,6 @@
       }
 
       _.each(this.profileData.recentOrders, function(order) {
-        order.status_locale = this.I18n.t('order.statuses.%@'.fmt(order.status_id));
         order.uri = helpers.fmt(this.resources.ORDER_URI,this.storeUrl,order.id,order.id);
         order.date_created_locale = this.localizeDate(order.date_created);
         order.date_shipped_locale = this.localizeDate(order.date_modified);
