@@ -1,45 +1,61 @@
 {
   "app": {
-    "description": "Viser kunde- og ordredetaljer fra BigCommerce.",
+    "name": "Bigcommerce",
+    "description": "Viser kunde- og bestillingsdetaljer fra Bigcommerce.",
     "parameters": {
       "url": {
-        "label": "Forretnings-URL"
+        "label": "Butikk-URL"
       },
       "username": {
-        "label": "Brugernavn"
+        "label": "Brukernavn"
       },
       "api_token": {
         "label": "API-token"
       },
       "order_id_field_id": {
-        "label": "Id til feltet Ordre-id"
+        "label": "Bestillings-ID Felt-ID"
       }
     }
   },
   "global": {
     "error": {
-      "title": "Der forekom en fejl",
-      "message": "Prøv forrige handling igen.",
-      "customerNotFound": "Kunden blev ikke fundet."
+      "title": "Det oppstod en feil",
+      "message": "Prøv forrige handling på nytt.",
+      "customerNotFound": "Kan ikke finne kunden."
     },
-    "loading": "Indlæser kundedata…",
-    "requesting": "Anmoder om kundedata fra BigCommerce..."
+    "loading": "Laster kundedata...",
+    "requesting": "Anmoder om kundedata fra Bigcommerce..."
   },
   "customer": {
-    "notes": "Notater",
-    "no_notes": "Ingen notater endnu."
+    "notes": "Merknader",
+    "no_notes": "Ingen merknader ennå."
   },
   "orders": {
-    "id": "SENESTE ORDRER",
+    "id": "NYE BESTILLINGER",
     "status": "STATUS"
   },
   "order": {
     "status": "Status",
-    "count": "Ordreantal",
-    "ticket": "Ordredetaljer for",
-    "subtotal_inc_tax": "Subtotal (inkl. moms)",
-    "total_inc_tax": "Total (inkl. moms)",
-    "date_created": "Oprettelsesdato",
-    "date_shipped": "Forsendelsesdato"
+    "count": "Antall bestillinger",
+    "ticket": "Bestillingsopplysninger for",
+    "subtotal_inc_tax": "Delsum (inkl. moms)",
+    "total_inc_tax": "Totalsum (inkl. moms)",
+    "date_created": "Opprettelsesdato",
+    "date_shipped": "Forsendelsesdato",
+    "statuses": {
+      "0": "Incomplete",
+      "1": "Pending",
+      "2": "Shipped",
+      "3": "Partially Shipped",
+      "4": "Refunded",
+      "5": "Cancelled",
+      "6": "Declined",
+      "7": "Awaiting Payment",
+      "8": "Awaiting Pickup",
+      "9": "Awaiting Shipment",
+      "10": "Completed",
+      "11": "Awaiting Fulfillment",
+      "12": "Manual Verification Required"
+    }
   }
 }

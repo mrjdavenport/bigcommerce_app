@@ -1,6 +1,7 @@
 {
   "app": {
-    "description": "Отображает данные клиентов и заказов от BigCommerce.",
+    "name": "Bigcommerce",
+    "description": "Отображает данные клиентов и заказов от Bigcommerce.",
     "parameters": {
       "url": {
         "label": "URL магазина"
@@ -23,7 +24,7 @@
       "customerNotFound": "Не удалось найти клиента."
     },
     "loading": "Загрузка данных клиентов...",
-    "requesting": "Запрос данных клиента из BigCommerce..."
+    "requesting": "Запрос данных клиента из Bigcommerce..."
   },
   "customer": {
     "notes": "Примечания",
@@ -40,6 +41,21 @@
     "subtotal_inc_tax": "Промежуточный итог (вкл. налог)",
     "total_inc_tax": "Итог (вкл. налог)",
     "date_created": "Дата создания",
-    "date_shipped": "Дата отгрузки"
+    "date_shipped": "Дата отгрузки",
+    "statuses": {
+      "0": "Incomplete",
+      "1": "Pending",
+      "2": "Shipped",
+      "3": "Partially Shipped",
+      "4": "Refunded",
+      "5": "Cancelled",
+      "6": "Declined",
+      "7": "Awaiting Payment",
+      "8": "Awaiting Pickup",
+      "9": "Awaiting Shipment",
+      "10": "Completed",
+      "11": "Awaiting Fulfillment",
+      "12": "Manual Verification Required"
+    }
   }
 }

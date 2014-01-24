@@ -1,6 +1,7 @@
 {
   "app": {
-    "description": "Affiche les détails du client et de la commande de BigCommerce.",
+    "name": "Bigcommerce",
+    "description": "Affiche les détails du client et de la commande de Bigcommerce.",
     "parameters": {
       "url": {
         "label": "URL du magasin"
@@ -23,11 +24,11 @@
       "customerNotFound": "Client introuvable."
     },
     "loading": "Chargement des données client en cours...",
-    "requesting": "Demande des données client à BigCommerce en cours…"
+    "requesting": "Demande des données client à Bigcommerce en cours…"
   },
   "customer": {
     "notes": "Remarques",
-    "no_notes": "Aucune note pour l’instant."
+    "no_notes": "Aucune remarque pour l’instant."
   },
   "orders": {
     "id": "COMMANDES RÉCENTES",
@@ -40,6 +41,21 @@
     "subtotal_inc_tax": "Sous-total (TTC)",
     "total_inc_tax": "Total (TTC)",
     "date_created": "Date de création",
-    "date_shipped": "Date d'expédition"
+    "date_shipped": "Date d'expédition",
+    "statuses": {
+      "0": "Incomplete",
+      "1": "Pending",
+      "2": "Shipped",
+      "3": "Partially Shipped",
+      "4": "Refunded",
+      "5": "Cancelled",
+      "6": "Declined",
+      "7": "Awaiting Payment",
+      "8": "Awaiting Pickup",
+      "9": "Awaiting Shipment",
+      "10": "Completed",
+      "11": "Awaiting Fulfillment",
+      "12": "Manual Verification Required"
+    }
   }
 }

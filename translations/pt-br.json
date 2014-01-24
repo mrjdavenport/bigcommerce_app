@@ -1,6 +1,7 @@
 {
   "app": {
-    "description": "Exibe detalhes do cliente e do pedido do BigCommerce.",
+    "name": "Bigcommerce",
+    "description": "Exibe detalhes do cliente e do pedido do Bigcommerce.",
     "parameters": {
       "url": {
         "label": "URL da loja"
@@ -23,7 +24,7 @@
       "customerNotFound": "O cliente não foi encontrado."
     },
     "loading": "Carregando dados do cliente...",
-    "requesting": "Solicitando os dados do cliente do BigCommerce..."
+    "requesting": "Solicitando os dados do cliente do Bigcommerce..."
   },
   "customer": {
     "notes": "Observações",
@@ -40,6 +41,21 @@
     "subtotal_inc_tax": "Subtotal (com impostos)",
     "total_inc_tax": "Total (com impostos)",
     "date_created": "Data da criação",
-    "date_shipped": "Data da remessa"
+    "date_shipped": "Data da remessa",
+    "statuses": {
+      "0": "Incomplete",
+      "1": "Pending",
+      "2": "Shipped",
+      "3": "Partially Shipped",
+      "4": "Refunded",
+      "5": "Cancelled",
+      "6": "Declined",
+      "7": "Awaiting Payment",
+      "8": "Awaiting Pickup",
+      "9": "Awaiting Shipment",
+      "10": "Completed",
+      "11": "Awaiting Fulfillment",
+      "12": "Manual Verification Required"
+    }
   }
 }

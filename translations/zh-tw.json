@@ -1,6 +1,7 @@
 {
   "app": {
-    "description": "顯示來自 BigCommerce 的客戶和訂單詳情。",
+    "name": "Bigcommerce",
+    "description": "顯示來自 Bigcommerce 的客戶和訂單詳情。",
     "parameters": {
       "url": {
         "label": "商店 URL"
@@ -23,7 +24,7 @@
       "customerNotFound": "找不到客戶。"
     },
     "loading": "客戶資料載入中……",
-    "requesting": "正在從 BigCommerce 請求客戶資料……"
+    "requesting": "正在從 Bigcommerce 請求客戶資料……"
   },
   "customer": {
     "notes": "備註",
@@ -40,6 +41,21 @@
     "subtotal_inc_tax": "小計（含稅）",
     "total_inc_tax": "合計（含稅）",
     "date_created": "建立日期",
-    "date_shipped": "出貨日期"
+    "date_shipped": "出貨日期",
+    "statuses": {
+      "0": "Incomplete",
+      "1": "Pending",
+      "2": "Shipped",
+      "3": "Partially Shipped",
+      "4": "Refunded",
+      "5": "Cancelled",
+      "6": "Declined",
+      "7": "Awaiting Payment",
+      "8": "Awaiting Pickup",
+      "9": "Awaiting Shipment",
+      "10": "Completed",
+      "11": "Awaiting Fulfillment",
+      "12": "Manual Verification Required"
+    }
   }
 }

@@ -1,6 +1,7 @@
 {
   "app": {
-    "description": "BigCommerce에서 얻은 고객 및 주문 정보를 표시합니다.",
+    "name": "Bigcommerce",
+    "description": "Bigcommerce에서 얻은 고객 및 주문 정보를 표시합니다.",
     "parameters": {
       "url": {
         "label": "스토어 URL"
@@ -23,7 +24,7 @@
       "customerNotFound": "고객을 찾을 수 없습니다."
     },
     "loading": "고객 데이터 로드 중…",
-    "requesting": "BigCommerce에서 고객 데이터 요청…"
+    "requesting": "Bigcommerce에서 고객 데이터 요청 중…"
   },
   "customer": {
     "notes": "메모",
@@ -40,6 +41,21 @@
     "subtotal_inc_tax": "소계(세금 포함)",
     "total_inc_tax": "총계(세금 포함)",
     "date_created": "만든 날짜",
-    "date_shipped": "배송 날짜"
+    "date_shipped": "배송 날짜",
+    "statuses": {
+      "0": "Incomplete",
+      "1": "Pending",
+      "2": "Shipped",
+      "3": "Partially Shipped",
+      "4": "Refunded",
+      "5": "Cancelled",
+      "6": "Declined",
+      "7": "Awaiting Payment",
+      "8": "Awaiting Pickup",
+      "9": "Awaiting Shipment",
+      "10": "Completed",
+      "11": "Awaiting Fulfillment",
+      "12": "Manual Verification Required"
+    }
   }
 }
