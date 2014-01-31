@@ -1,5 +1,6 @@
 {
   "app": {
+    "name": "Bigcommerce",
     "description": "Affiche les détails du client et de la commande de BigCommerce.",
     "parameters": {
       "url": {
@@ -27,7 +28,7 @@
   },
   "customer": {
     "notes": "Remarques",
-    "no_notes": "Aucune note pour l’instant."
+    "no_notes": "Aucune remarque pour l’instant."
   },
   "orders": {
     "id": "COMMANDES RÉCENTES",

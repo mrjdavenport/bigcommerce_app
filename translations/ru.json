@@ -1,6 +1,7 @@
 {
   "app": {
-    "description": "Отображает данные клиентов и заказов от BigCommerce.",
+    "name": "Bigcommerce",
+    "description": "Отображает данные клиентов и заказов от Bigcommerce.",
     "parameters": {
       "url": {
         "label": "URL магазина"
@@ -23,7 +24,7 @@
       "customerNotFound": "Не удалось найти клиента."
     },
     "loading": "Загрузка данных клиентов...",
-    "requesting": "Запрос данных клиента из BigCommerce..."
+    "requesting": "Запрос данных клиента из Bigcommerce..."
   },
   "customer": {
     "notes": "Примечания",

@@ -1,6 +1,7 @@
 {
   "app": {
-    "description": "Affiche les détails du client et de la commande de BigCommerce.",
+    "name": "Bigcommerce",
+    "description": "Affiche les détails du client et de la commande de Bigcommerce.",
     "parameters": {
       "url": {
         "label": "URL du magasin"
@@ -23,11 +24,11 @@
       "customerNotFound": "Client introuvable."
     },
     "loading": "Chargement des données client en cours...",
-    "requesting": "Demande des données client à BigCommerce en cours…"
+    "requesting": "Demande des données client à Bigcommerce en cours…"
   },
   "customer": {
     "notes": "Remarques",
-    "no_notes": "Aucune note pour l’instant."
+    "no_notes": "Aucune remarque pour l’instant."
   },
   "orders": {
     "id": "COMMANDES RÉCENTES",

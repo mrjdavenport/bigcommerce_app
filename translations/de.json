@@ -1,6 +1,7 @@
 {
   "app": {
-    "description": "Zeigt Kunden- und Bestelldetails von BigCommerce an.",
+    "name": "Bigcommerce",
+    "description": "Zeigt Kunden- und Bestelldetails von Bigcommerce an.",
     "parameters": {
       "url": {
         "label": "Shop-URL"
@@ -23,7 +24,7 @@
       "customerNotFound": "Kunde nicht gefunden."
     },
     "loading": "Kundendaten werden geladen...",
-    "requesting": "Kundendaten von BigCommerce anfordern..."
+    "requesting": "Kundendaten von Bigcommerce anfordern..."
   },
   "customer": {
     "notes": "Notizen",

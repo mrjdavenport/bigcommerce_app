@@ -1,46 +1,113 @@
 {
   "app": {
-    "name": "Bigcommerce",
-    "description": "Displays customer and order details from Bigcommerce.",
+    "name": {
+      "title": "This is the App name",
+      "value": "Bigcommerce"
+    },
+    "description": {
+      "title": "This is the App description in the marketplace",
+      "value": "Displays customer and order details from Bigcommerce."
+    },
     "parameters": {
       "url": {
-        "label": "Store URL"
+        "label": {
+          "title": "URL of their Bigcommerce online store to provide in the app settings",
+          "value": "Store URL"
+        }
       },
       "username": {
-        "label": "Username"
+        "label": {
+          "title": "this is the Bigcommerce username of the person setting up the zendesk app for the settings",
+          "value": "Username"
+        }
       },
       "api_token": {
-        "label": "API Token"
+        "label": {
+          "title": "this is the Bigcommerce API token of the person setting up the zendesk app for the settings",
+          "value": "API Token"
+        }
       },
       "order_id_field_id": {
-        "label": "Order ID Field ID"
+        "label": {
+          "title": "This is the field in the app settings in their zendesk that will store the order ID of a bigcommerce order when they get a zendesk ticket",
+          "value": "Order ID Field ID"
+        }
       }
-    }
+    },
+    "package": "bigcommerce_app"
   },
   "global": {
     "error": {
-      "title": "An error occurred",
-      "message": "Please try the previous action again.",
-      "customerNotFound": "Customer could not be found."
+      "title": {
+        "title": "error message title",
+        "value": "An error occurred"
+      },
+      "message": {
+        "title": "error message explanation text asking them to retry",
+        "value": "Please try the previous action again."
+      },
+      "customerNotFound": {
+        "title": "error message explanation text",
+        "value": "Customer could not be found."
+      }
     },
-    "loading": "Loading customer data...",
-    "requesting": "Requesting customer data from Bigcommerce..."
+    "loading": {
+      "title": "loading text in the app",
+      "value": "Loading customer data..."
+    },
+    "requesting": {
+      "title": "loading text in the app",
+      "value": "Requesting customer data from Bigcommerce..."
+    }
   },
   "customer": {
-    "notes": "Notes",
-    "no_notes": "No notes yet."
+    "notes": {
+      "title": "Notes field in the app",
+      "value": "Notes"
+    },
+    "no_notes": {
+      "title": "Placeholder message when no notes are present",
+      "value": "No notes yet."
+    }
   },
   "orders": {
-    "id": "RECENT ORDERS",
-    "status": "STATUS"
+    "id": {
+      "title": "Recent order table, this will list the 5 most recent order ids and their status",
+      "value": "RECENT ORDERS"
+    },
+    "status": {
+      "title": "status table, this will list the 5 most recent order ids and their status",
+      "value": "STATUS"
+    }
   },
   "order": {
-    "status": "Status",
-    "count": "Orders count",
-    "ticket": "Order details for",
-    "subtotal_inc_tax": "Subtotal (inc. tax)",
-    "total_inc_tax": "Total (inc. tax)",
-    "date_created": "Date Created",
-    "date_shipped": "Date Shipped"
+    "status": {
+      "title": "This is the order status",
+      "value": "Status"
+    },
+    "count": {
+      "title": "this is the total number of orders this customer has made",
+      "value": "Orders count"
+    },
+    "ticket": {
+      "title": "these are the details of the order for this customer, this is the title to a long list of info about the order",
+      "value": "Order details for"
+    },
+    "subtotal_inc_tax": {
+      "title": "subtotal (a number will be displayed there)",
+      "value": "Subtotal (inc. tax)"
+    },
+    "total_inc_tax": {
+      "title": "subtotal (a number will be displayed there)",
+      "value": "Total (inc. tax)"
+    },
+    "date_created": {
+      "title": "this is the date the order was put through",
+      "value": "Date Created"
+    },
+    "date_shipped": {
+      "title": "this is the date the order was shipped",
+      "value": "Date Shipped"
+    }
   }
 }

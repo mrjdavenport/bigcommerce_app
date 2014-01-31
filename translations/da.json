@@ -1,6 +1,7 @@
 {
   "app": {
-    "description": "Viser kunde- og ordredetaljer fra BigCommerce.",
+    "name": "Bigcommerce",
+    "description": "Viser kunde- og ordredetaljer fra Bigcommerce.",
     "parameters": {
       "url": {
         "label": "Forretnings-URL"
@@ -23,7 +24,7 @@
       "customerNotFound": "Kunden blev ikke fundet."
     },
     "loading": "Indlæser kundedata…",
-    "requesting": "Anmoder om kundedata fra BigCommerce..."
+    "requesting": "Anmoder om kundedata fra Bigcommerce..."
   },
   "customer": {
     "notes": "Notater",

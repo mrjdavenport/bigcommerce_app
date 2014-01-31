@@ -1,6 +1,7 @@
 {
   "app": {
-    "description": "显示来自 BigCommerce 的客户和订单详情。",
+    "name": "Bigcommerce",
+    "description": "显示来自 Bigcommerce 的客户和订单详情。",
     "parameters": {
       "url": {
         "label": "商店 URL"
@@ -23,7 +24,7 @@
       "customerNotFound": "无法找到客户。"
     },
     "loading": "正在加载客户数据……",
-    "requesting": "正在从 BigCommerce 请求客户数据……"
+    "requesting": "正在从 Bigcommerce 请求客户数据……"
   },
   "customer": {
     "notes": "注释",

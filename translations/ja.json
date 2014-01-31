@@ -1,6 +1,7 @@
 {
   "app": {
-    "description": "BigCommerceからの顧客および注文の詳細を表示します。",
+    "name": "Bigcommerce",
+    "description": "Bigcommerceからの顧客および注文の詳細を表示します。",
     "parameters": {
       "url": {
         "label": "ストアのURL"
@@ -23,7 +24,7 @@
       "customerNotFound": "カスタマーが見つかりませんでした。"
     },
     "loading": "顧客データを読み込み中...",
-    "requesting": "BigCommerceから顧客データを要求しています..."
+    "requesting": "Bigcommerceから顧客データを要求しています..."
   },
   "customer": {
     "notes": "メモ",
