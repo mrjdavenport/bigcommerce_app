@@ -138,8 +138,8 @@
       this.ajax('getOrders', this.profileData.id);
     },
 
-    handleGetOrders: function(data) {
-      if (_.isUndefined(data[0])) return;
+    handleGetOrders: function(data, textStatus, jqXHR) {
+      if (jqXHR.status === 204) { return; }
       this.profileData.recentOrders = data;
       this.profileData.ordersCount = data.length;
 
