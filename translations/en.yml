@@ -9,6 +9,7 @@ parts:
       key: "txt.apps.bigcommerce_app.app.name"
       title: "This is the App name"
       value: "Bigcommerce"
+      hidden: true
   - translation:
       key: "txt.apps.bigcommerce_app.app.description"
       title: "This is the App description in the marketplace"
