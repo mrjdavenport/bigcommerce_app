@@ -1,46 +1,46 @@
 {
   "app": {
     "name": "Bigcommerce",
-    "description": "Displays customer and order details from Bigcommerce.",
+    "description": "Visar kund- och beställningsuppgifter från Bigcommerce.",
     "parameters": {
       "url": {
-        "label": "Store URL"
+        "label": "Butikens webbadress"
       },
       "username": {
-        "label": "Username"
+        "label": "Användarnamn"
       },
       "api_token": {
-        "label": "API Token"
+        "label": "API-token"
       },
       "order_id_field_id": {
-        "label": "Order ID Field ID"
+        "label": "Fält-ID för order-ID"
       }
     }
   },
   "global": {
     "error": {
-      "title": "An error occurred",
-      "message": "Please try the previous action again.",
-      "customerNotFound": "Customer could not be found."
+      "title": "Ett fel inträffade",
+      "message": "Prova den föregående åtgärden igen.",
+      "customerNotFound": "Det gick inte att hitta kunden."
     },
-    "loading": "Loading customer data...",
-    "requesting": "Requesting customer data from Bigcommerce..."
+    "loading": "Läser in kunduppgifter...",
+    "requesting": "Begär kunduppgifter från Bigcommerce..."
   },
   "customer": {
-    "notes": "Notes",
-    "no_notes": "No notes yet."
+    "notes": "Anteckningar",
+    "no_notes": "Inga anteckningar."
   },
   "orders": {
-    "id": "RECENT ORDERS",
+    "id": "SENASTE BESTÄLLNINGAR",
     "status": "STATUS"
   },
   "order": {
     "status": "Status",
-    "count": "Orders count",
-    "ticket": "Order details for",
-    "subtotal_inc_tax": "Subtotal (inc. tax)",
-    "total_inc_tax": "Total (inc. tax)",
-    "date_created": "Date Created",
-    "date_shipped": "Date Shipped"
+    "count": "Antal beställningar",
+    "ticket": "Beställningsuppgifter för",
+    "subtotal_inc_tax": "Delsumma (inkl. moms)",
+    "total_inc_tax": "Summa (inkl. moms)",
+    "date_created": "Skapad",
+    "date_shipped": "Skickad"
   }
 }

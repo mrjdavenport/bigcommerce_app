@@ -28,7 +28,7 @@
   },
   "customer": {
     "notes": "Notater",
-    "no_notes": "Ingen notater endnu."
+    "no_notes": "Endnu ingen notater."
   },
   "orders": {
     "id": "SENESTE ORDRER",

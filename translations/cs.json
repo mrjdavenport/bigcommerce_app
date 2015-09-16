@@ -1,0 +1,46 @@
+{
+  "app": {
+    "name": "Bigcommerce",
+    "description": "Zobrazí detaily zákazníka a objednávky z Bigcommerce.",
+    "parameters": {
+      "url": {
+        "label": "URL obchodu"
+      },
+      "username": {
+        "label": "Uživatelské jméno"
+      },
+      "api_token": {
+        "label": "Token API"
+      },
+      "order_id_field_id": {
+        "label": "ID objednávkypole ID objednávky"
+      }
+    }
+  },
+  "global": {
+    "error": {
+      "title": "Došlo k chybě",
+      "message": "Zkuste prosím provést předchozí akci znovu.",
+      "customerNotFound": "Zákazníka nelze najít."
+    },
+    "loading": "Načítání dat zákazníka...",
+    "requesting": "Požadavek na data zákazníka z Bigcommerce..."
+  },
+  "customer": {
+    "notes": "Poznámky",
+    "no_notes": "Dosud žádné poznámky."
+  },
+  "orders": {
+    "id": "POSLEDNÍ OBJEDNÁVKY",
+    "status": "STAV"
+  },
+  "order": {
+    "status": "Stav",
+    "count": "Počet objednávek",
+    "ticket": "Detaily objednávky na",
+    "subtotal_inc_tax": "Mezisoučet (vč. DPH)",
+    "total_inc_tax": "Celkem (vč. DPH)",
+    "date_created": "Datum vytvoření",
+    "date_shipped": "Datum dodání"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "app": {
+    "name": "Bigcommerce",
+    "description": "Näyttää asiakkaan ja tilauksen tiedot Bigcommercesta.",
+    "parameters": {
+      "url": {
+        "label": "Säilytä URL-osoite"
+      },
+      "username": {
+        "label": "Käyttäjätunnus"
+      },
+      "api_token": {
+        "label": "API-tunnus"
+      },
+      "order_id_field_id": {
+        "label": "Tilaustunnuksen kenttätunnus"
+      }
+    }
+  },
+  "global": {
+    "error": {
+      "title": "Esiintyi virhe",
+      "message": "Yritä edellistä toimintoa uudelleen.",
+      "customerNotFound": "Asiakas ei löytynyt."
+    },
+    "loading": "Lataa asiakastietoja...",
+    "requesting": "Pyytää asiakastietoja Bigcommercesta..."
+  },
+  "customer": {
+    "notes": "Huomautukset",
+    "no_notes": "Ei vielä huomautuksia."
+  },
+  "orders": {
+    "id": "VIIMEISIMMÄT TILAUKSET",
+    "status": "TILA"
+  },
+  "order": {
+    "status": "Tila",
+    "count": "Tilausten lukumäärä",
+    "ticket": "Tilaustiedot kohteelle",
+    "subtotal_inc_tax": "Välisaldo (mukaan lukien verot)",
+    "total_inc_tax": "Yhteensä (mukaan lukien verot)",
+    "date_created": "Luontipäivämäärä",
+    "date_shipped": "Lähetyspäivä"
+  }
+}

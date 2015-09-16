@@ -1,0 +1,46 @@
+{
+  "app": {
+    "name": "Bigcommerce",
+    "description": "لعرض بيانات العملاء والطلبات من Bigcommerce.",
+    "parameters": {
+      "url": {
+        "label": "عنوان URL المتجر"
+      },
+      "username": {
+        "label": "اسم المستخدم"
+      },
+      "api_token": {
+        "label": "رمز مميز لواجهة البرمجة"
+      },
+      "order_id_field_id": {
+        "label": "معرّف حقل معرّف الطلب"
+      }
+    }
+  },
+  "global": {
+    "error": {
+      "title": "حدث خطأ",
+      "message": "يُرجى إعادة محاولة الإجراء السابق.",
+      "customerNotFound": "تعذر العثور على العميل."
+    },
+    "loading": "جارٍ تحميل بيانات العميل...",
+    "requesting": "جارٍ طلب بيانات العميل من Bigcommerce..."
+  },
+  "customer": {
+    "notes": "ملاحظات",
+    "no_notes": "لا توجد ملاحظات بعد."
+  },
+  "orders": {
+    "id": "طلبات حديثة",
+    "status": "الحالة"
+  },
+  "order": {
+    "status": "الحالة",
+    "count": "عدد الطلبات",
+    "ticket": "بيانات طلب",
+    "subtotal_inc_tax": "الإجمالي الجزئي (شامل الضريبة)",
+    "total_inc_tax": "الإجمالي الجزئي (شامل الضريبة)",
+    "date_created": "تاريخ الإنشاء",
+    "date_shipped": "تاريخ الشحن"
+  }
+}

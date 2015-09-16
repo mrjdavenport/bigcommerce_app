@@ -1,46 +1,46 @@
 {
   "app": {
     "name": "Bigcommerce",
-    "description": "Displays customer and order details from Bigcommerce.",
+    "description": "Bigcommerce’ten müşteri ve sipariş detaylarını görüntüler.",
     "parameters": {
       "url": {
-        "label": "Store URL"
+        "label": "Mağaza URL"
       },
       "username": {
-        "label": "Username"
+        "label": "Kullanıcı adı"
       },
       "api_token": {
-        "label": "API Token"
+        "label": "API Belirteci"
       },
       "order_id_field_id": {
-        "label": "Order ID Field ID"
+        "label": "Sipariş Kimliğine ait Alan Kimliği"
       }
     }
   },
   "global": {
     "error": {
-      "title": "An error occurred",
-      "message": "Please try the previous action again.",
-      "customerNotFound": "Customer could not be found."
+      "title": "Bir hata oluştu",
+      "message": "Lütfen önceki eylemi tekrar deneyin.",
+      "customerNotFound": "Müşteri bulunamadı."
     },
-    "loading": "Loading customer data...",
-    "requesting": "Requesting customer data from Bigcommerce..."
+    "loading": "Müşteri verileri yükleniyor...",
+    "requesting": "Bigcommerce’ten müşteri verileri isteniyor..."
   },
   "customer": {
-    "notes": "Notes",
-    "no_notes": "No notes yet."
+    "notes": "Notlar",
+    "no_notes": "Henüz not yok."
   },
   "orders": {
-    "id": "RECENT ORDERS",
-    "status": "STATUS"
+    "id": "SON SİPARİŞLER",
+    "status": "DURUM"
   },
   "order": {
-    "status": "Status",
-    "count": "Orders count",
-    "ticket": "Order details for",
-    "subtotal_inc_tax": "Subtotal (inc. tax)",
-    "total_inc_tax": "Total (inc. tax)",
-    "date_created": "Date Created",
-    "date_shipped": "Date Shipped"
+    "status": "Durum",
+    "count": "Sipariş sayısı",
+    "ticket": "Sipariş detayları",
+    "subtotal_inc_tax": "Ara toplam (vergi dahil)",
+    "total_inc_tax": "Toplam (vergi dahil)",
+    "date_created": "Oluşturma Tarihi",
+    "date_shipped": "Sevk Tarihi"
   }
 }

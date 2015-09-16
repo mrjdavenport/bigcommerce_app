@@ -7,7 +7,7 @@
         "label": "URL da loja"
       },
       "username": {
-        "label": "Nome do usuário"
+        "label": "Nome de usuário"
       },
       "api_token": {
         "label": "Token da API"

@@ -1,0 +1,46 @@
+{
+  "app": {
+    "name": "Bigcommerce",
+    "description": "Afişează detaliile clientului şi comenzii din Bigcommerce.",
+    "parameters": {
+      "url": {
+        "label": "Adresă URL magazin"
+      },
+      "username": {
+        "label": "Nume de utilizator"
+      },
+      "api_token": {
+        "label": "Simbol API"
+      },
+      "order_id_field_id": {
+        "label": "Identificator câmp Identificator comandă"
+      }
+    }
+  },
+  "global": {
+    "error": {
+      "title": "A apărut o eroare",
+      "message": "Vă rugăm să repetaţi acţiunea anterioară.",
+      "customerNotFound": "Clientul nu a putut fi găsit."
+    },
+    "loading": "Se încarcă datele clientului...",
+    "requesting": "Se solicită datele clientului de la Bigcommerce..."
+  },
+  "customer": {
+    "notes": "Note",
+    "no_notes": "Încă nu există note."
+  },
+  "orders": {
+    "id": "COMENZI RECENTE",
+    "status": "STARE"
+  },
+  "order": {
+    "status": "Stare",
+    "count": "Număr de comenzi",
+    "ticket": "Detaliile comenzii pentru",
+    "subtotal_inc_tax": "Subtotal (incl. taxe)",
+    "total_inc_tax": "Total (incl. taxe)",
+    "date_created": "Data creării",
+    "date_shipped": "Data livrării"
+  }
+}
