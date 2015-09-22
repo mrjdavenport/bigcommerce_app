@@ -1,0 +1,46 @@
+{
+  "app": {
+    "name": "Bigcommerce",
+    "description": "Ügyfél adatok és rendelések részleteinek megjelenítése a Bigcommerce-ből.",
+    "parameters": {
+      "url": {
+        "label": "URL tárolása"
+      },
+      "username": {
+        "label": "Felhasználónév"
+      },
+      "api_token": {
+        "label": "API Token"
+      },
+      "order_id_field_id": {
+        "label": "Rendelés azonosító Mező azonosító"
+      }
+    }
+  },
+  "global": {
+    "error": {
+      "title": "Hiba történt",
+      "message": "Kérem próbálja újra az előző műveletet.",
+      "customerNotFound": "Ügyfél nem található."
+    },
+    "loading": "Ügyféladatok betöltése...",
+    "requesting": "Ügyfél adatok kérelmezése a Bigcommerce-ből..."
+  },
+  "customer": {
+    "notes": "Megyjegyzések",
+    "no_notes": "Még nincsenek jegyzetek."
+  },
+  "orders": {
+    "id": "LEGÚJABB RENDELÉSEK",
+    "status": "Állapot"
+  },
+  "order": {
+    "status": "Állapot",
+    "count": "Megrendelések száma",
+    "ticket": "Rendelés adatok",
+    "subtotal_inc_tax": "Részösszeg (adóval)",
+    "total_inc_tax": "Összesen (adóval)",
+    "date_created": "Időpont létrehozva",
+    "date_shipped": "Dátum elküldve"
+  }
+}

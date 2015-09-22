@@ -1,0 +1,46 @@
+{
+  "app": {
+    "name": "Bigcommerce",
+    "description": "Wyświetla szczegóły klienta i zamówienia z Bigcommerce.",
+    "parameters": {
+      "url": {
+        "label": "Adres URL sklepu"
+      },
+      "username": {
+        "label": "Nazwa użytkownika"
+      },
+      "api_token": {
+        "label": "Token interfejsu API"
+      },
+      "order_id_field_id": {
+        "label": "Identyfikator pola identyfikatora zamówienia"
+      }
+    }
+  },
+  "global": {
+    "error": {
+      "title": "Wystąpił błąd",
+      "message": "Spróbuj ponowić poprzednią czynność.",
+      "customerNotFound": "Nie można znaleźć klienta."
+    },
+    "loading": "Ładowanie danych klienta...",
+    "requesting": "Żądanie danych klienta od Bigcommerce..."
+  },
+  "customer": {
+    "notes": "Notatki",
+    "no_notes": "Nie ma jeszcze notatek."
+  },
+  "orders": {
+    "id": "OSTATNIE ZAMÓWIENIA",
+    "status": "STATUS"
+  },
+  "order": {
+    "status": "Status",
+    "count": "Liczba zamówień",
+    "ticket": "Szczegóły zamówienia dotyczące",
+    "subtotal_inc_tax": "Suma częściowa (z podatkiem)",
+    "total_inc_tax": "Razem (z podatkiem)",
+    "date_created": "Data utworzenia",
+    "date_shipped": "Data wysłania"
+  }
+}

@@ -13,14 +13,14 @@
         "label": "API 토큰"
       },
       "order_id_field_id": {
-        "label": "주문 ID 필드 ID"
+        "label": "주문 아이디 필드 아이디"
       }
     }
   },
   "global": {
     "error": {
-      "title": "오류가 발생했습니다",
-      "message": "다시 이전 작업을 시도하십시오.",
+      "title": "오류가 발생했습니다.",
+      "message": "다시 이전 작업을 시도하세요.",
       "customerNotFound": "고객을 찾을 수 없습니다."
     },
     "loading": "고객 데이터 로드 중…",
@@ -39,7 +39,7 @@
     "count": "주문 개수",
     "ticket": "주문 정보:",
     "subtotal_inc_tax": "소계(세금 포함)",
-    "total_inc_tax": "총계(세금 포함)",
+    "total_inc_tax": "합계(세금 포함)",
     "date_created": "만든 날짜",
     "date_shipped": "배송 날짜"
   }
