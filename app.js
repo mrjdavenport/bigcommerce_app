@@ -10,7 +10,7 @@
 
     resources: {
       PROFILE_URI       : '/api/v2/customers.json?email=',
-      RECENT_ORDERS_URI : '/api/v2/orders.json?customer_id=',
+      RECENT_ORDERS_URI : '/api/v2/orders.json?sort=date_created:desc&customer_id=',
       CUSTOMER_URI      : '%@/admin/index.php?ToDo=searchCustomersRedirect&idFrom=%@&idTo=%@',
       ORDER_URI         : '%@/admin/index.php?ToDo=searchOrdersRedirect&orderFrom=%@&orderTo=%@'
     },
@@ -144,9 +144,7 @@
       this.profileData.ordersCount = data.length;
 
       if (data.length > 3) {
-        this.profileData.recentOrders = data.slice(data.length-3, data.length).reverse();
-      } else {
-        this.profileData.recentOrders = data.reverse();
+        this.profileData.recentOrders = data.slice(0, 3);
       }
 
       _.each(this.profileData.recentOrders, function(order) {
