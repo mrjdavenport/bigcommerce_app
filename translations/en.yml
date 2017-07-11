@@ -7,13 +7,34 @@ packages:
 parts:
   - translation:
       key: "txt.apps.bigcommerce_app.app.name"
-      title: "This is the App name"
+      title: "Name for App: Bigcommerce"
       value: "Bigcommerce"
       hidden: true
   - translation:
-      key: "txt.apps.bigcommerce_app.app.description"
-      title: "This is the App description in the marketplace"
+      key: "txt.apps.bigcommerce_app.app.short_description"
+      title: "Description for App: Bigcommerce. Do not translate \"Bigcommerce.\""
       value: "Displays customer and order details from Bigcommerce."
+  - translation:
+      key: "txt.apps.bigcommerce_app.app.long_description"
+      title: "Long Description for App: Bigcommerce. Do not translate \"Bigcommerce.\""
+      value: "The Zendesk Support for Bigcommerce integration works to unite your business by displaying critical Bigcommerce data beside Zendesk Support ticket information.
+
+
+### Improve customer satisfaction with better conversations
+
+
+* Solve tickets faster by having access to relevant customer data from Bigcommerce, such as billing, shipping, and order information, on Zendesk Support ticket pages.
+
+* Easily navigate to  additional data in Bigcommerce by simply clicking on Customer Number or Order Numbers in Zendesk Support.
+
+
+By enabling this app, You agree to the [Built by Zendesk Terms of Use](https://www.zendesk.com/company/built-by-zendesk-agmt/)."
+  - translation:
+      key: "txt.apps.bigcommerce_app.app.installation_instructions"
+      title: "Installation Instructions for App: Bigcommerce. Do not translate \"Bigcommerce.\""
+      value: "For installation instructions, see the [Installing the Bigcommerce for Zendesk Support app](https://support.zendesk.com/hc/en-us/articles/203660086) article.
+
+"
   - translation:
       key: "txt.apps.bigcommerce_app.app.parameters.url.label"
       title: "URL of their Bigcommerce online store to provide in the app settings"
