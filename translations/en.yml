@@ -17,7 +17,7 @@ parts:
   - translation:
       key: "txt.apps.bigcommerce_app.app.long_description"
       title: "Long Description for App: Bigcommerce. Do not translate \"Bigcommerce.\""
-      value: "The Zendesk Support for Bigcommerce integration works to unite your business by displaying critical Bigcommerce data beside Zendesk Support ticket information.
+      value: "The Zendesk Support for Bigcommerce integration works to unite your business by displaying critical Bigcommerce data alongside Zendesk Support ticket information.
 
 
 ### Improve customer satisfaction with better conversations
@@ -25,7 +25,7 @@ parts:
 
 * Solve tickets faster by having access to relevant customer data from Bigcommerce, such as billing, shipping, and order information, on Zendesk Support ticket pages.
 
-* Easily navigate to  additional data in Bigcommerce by simply clicking on Customer Number or Order Numbers in Zendesk Support.
+* Easily navigate to  additional data in Bigcommerce by simply clicking on Customer Numbers or Order Numbers in Zendesk Support.
 
 
 By enabling this app, You agree to the [Built by Zendesk Terms of Use](https://www.zendesk.com/company/built-by-zendesk-agmt/)."
