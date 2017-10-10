@@ -2,36 +2,36 @@
   "app": {
     "name": {
       "title": "Name for App: Bigcommerce",
-      "value": "Bigcommerce"
+      "value": "BigCommerce"
     },
     "short_description": {
       "title": "Description for App: Bigcommerce. Do not translate \"Bigcommerce.\"",
-      "value": "Displays customer and order details from Bigcommerce."
+      "value": "Displays customer and order details from BigCommerce."
     },
     "long_description": {
       "title": "Long Description for App: Bigcommerce. Do not translate \"Bigcommerce.\"",
-      "value": "The Zendesk Support for Bigcommerce integration works to unite your business by displaying critical Bigcommerce data beside Zendesk Support ticket information.\n\n### Improve customer satisfaction with better conversations\n\n* Solve tickets faster by having access to relevant customer data from Bigcommerce, such as billing, shipping, and order information, on Zendesk Support ticket pages.\n* Easily navigate to  additional data in Bigcommerce by simply clicking on Customer Number or Order Numbers in Zendesk Support.\n\nBy enabling this app, You agree to the [Built by Zendesk Terms of Use](https://www.zendesk.com/company/built-by-zendesk-agmt/)."
+      "value": "The Zendesk Support for BigCommerce integration works to unite your business by displaying critical BigCommerce data alongside Zendesk Support ticket information.\n\n### Improve customer satisfaction with better conversations\n\n* Solve tickets faster by having access to relevant customer data from BigCommerce, such as billing, shipping, and order information, on Zendesk Support ticket pages.\n* Easily navigate to  additional data in BigCommerce by simply clicking on Customer Numbers or Order Numbers in Zendesk Support.\n\nBy enabling this app, You agree to the [Built by Zendesk Terms of Use](https://www.zendesk.com/company/built-by-zendesk-agmt/)."
     },
     "installation_instructions": {
       "title": "Installation Instructions for App: Bigcommerce. Do not translate \"Bigcommerce.\"",
-      "value": "For installation instructions, see the [Installing the Bigcommerce for Zendesk Support app](https://support.zendesk.com/hc/en-us/articles/203660086) article.\n"
+      "value": "For installation instructions, see the [Installing the BigCommerce for Zendesk Support app](https://support.zendesk.com/hc/en-us/articles/203660086) article.\n"
     },
     "parameters": {
       "url": {
         "label": {
-          "title": "URL of their Bigcommerce online store to provide in the app settings",
+          "title": "URL of their BigCommerce online store to provide in the app settings",
           "value": "Store URL"
         }
       },
       "username": {
         "label": {
-          "title": "this is the Bigcommerce username of the person setting up the zendesk app for the settings",
+          "title": "this is the BigCommerce username of the person setting up the zendesk app for the settings",
           "value": "Username"
         }
       },
       "api_token": {
         "label": {
-          "title": "this is the Bigcommerce API token of the person setting up the zendesk app for the settings",
+          "title": "this is the BigCommerce API token of the person setting up the zendesk app for the settings",
           "value": "API Token"
         }
       },
@@ -65,7 +65,7 @@
     },
     "requesting": {
       "title": "loading text in the app",
-      "value": "Requesting customer data from Bigcommerce..."
+      "value": "Requesting customer data from BigCommerce..."
     }
   },
   "customer": {
