@@ -49,7 +49,8 @@ By enabling this app, You agree to the [Built by Zendesk Terms of Use](https://w
       value: "API Token"
   - translation:
       key: "txt.apps.bigcommerce_app.app.parameters.order_id_field_id.label"
-      title: "This is the field in the app settings in their zendesk that will store the order ID of a bigcommerce order when they get a zendesk ticket"
+      title: "This is the field in the app settings in their zendesk that will store the Order ID of a Bigcommerce order when they get a zendesk ticket. It is the field ID in the app for the Order ID. https://support.bigcommerce.com/articles/Public/Order-ID"
+      screenshot: "https://zendesk.box.com/s/916hnob2xum059857t852jpc603vkx1y"
       value: "Order ID Field ID"
   - translation:
       key: "txt.apps.bigcommerce_app.global.error.title"
