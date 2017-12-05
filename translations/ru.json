@@ -1,7 +1,9 @@
 {
   "app": {
-    "name": "Bigcommerce",
-    "description": "Отображает данные клиентов и заказов от Bigcommerce.",
+    "name": "BigCommerce",
+    "short_description": "Отображает данные клиентов и заказов из BigCommerce.",
+    "long_description": "Интеграция Zendesk Support for BigCommerce способствует объединению вашего бизнеса благодаря отображению важных данных BigCommerce вместе с информацией тикетов Zendesk Support.\n\n### Повышение удовлетворенности клиентов благодаря более эффективному общению\n\n* Ускоренное выполнение тикетов благодаря доступу к необходимым данным клиентов из BigCommerce, например информации об оплате, отгрузке и заказах на страницах тикетов Zendesk Support.\n* Удобный переход к дополнительным данным в BigCommerce&#160;— достаточно щелкнуть номер клиента или номер заказа в Zendesk Support.\n\nАктивируя это приложение, вы принимаете [Условия пользования продуктами Zendesk](https://www.zendesk.com/company/built-by-zendesk-agmt/).",
+    "installation_instructions": "Инструкции по установке см. в статье [Установка приложения BigCommerce for Zendesk](https://support.zendesk.com/hc/en-us/articles/203660086).\n",
     "parameters": {
       "url": {
         "label": "URL магазина"
@@ -10,7 +12,7 @@
         "label": "Имя пользователя"
       },
       "api_token": {
-        "label": "Маркер API"
+        "label": "Токен API"
       },
       "order_id_field_id": {
         "label": "Код поля номера заказа"
@@ -24,7 +26,7 @@
       "customerNotFound": "Не удалось найти клиента."
     },
     "loading": "Загрузка данных клиентов...",
-    "requesting": "Запрос данных клиента из Bigcommerce..."
+    "requesting": "Запрос данных клиента из BigCommerce..."
   },
   "customer": {
     "notes": "Примечания",

@@ -1,7 +1,9 @@
 {
   "app": {
-    "name": "Bigcommerce",
-    "description": "顯示來自 Bigcommerce 的客戶和訂單詳情。",
+    "name": "BigCommerce",
+    "short_description": "顯示來自 BigCommerce 的客戶和訂單詳情。",
+    "long_description": "Zendesk Support for BigCommerce 整合透過在 Zendesk Support 工單資訊旁顯示關鍵 BigCommerce 資料，統一您的業務。\n\n### 溝通更佳，客戶滿意度便更高\n\n* 透過在 Zendesk Support 工單頁面上存取 BigCommerce 的相關客戶資料，如帳單、送貨，以及訂單資訊，更快地解決工單。\n* 在 Zendesk Support 中按一下客戶號碼或訂單號碼即可便捷導覽 BigCommerce 中的更多資料。\n\n啟用此 app 即表示您同意 [Zendesk 自建使用條款](https://www.zendesk.com/company/built-by-zendesk-agmt/)。",
+    "installation_instructions": "請查閱[安裝 BigCommerce for Zendesk Support app](https://support.zendesk.com/hc/en-us/articles/203660086) 這篇文章以瞭解安裝說明。\n",
     "parameters": {
       "url": {
         "label": "商店 URL"
@@ -24,7 +26,7 @@
       "customerNotFound": "找不到客戶。"
     },
     "loading": "客戶資料載入中……",
-    "requesting": "正在從 Bigcommerce 請求客戶資料……"
+    "requesting": "正在從 BigCommerce 請求客戶資料……"
   },
   "customer": {
     "notes": "備註",

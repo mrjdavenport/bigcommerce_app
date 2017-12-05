@@ -1,7 +1,9 @@
 {
   "app": {
     "name": "Bigcommerce",
-    "description": "Bigcommerce’ten müşteri ve sipariş detaylarını görüntüler.",
+    "short_description": "BigCommerce'ten müşteri ve sipariş ayrıntılarını görüntüler.",
+    "long_description": "BigCommerce için Zendesk Support tümleştirmesi, Zendesk Support kayıt bilgilerinin yanı sıra önemli BigCommerce verilerini görüntüleyerek işinizi birleştirir.\n\n### Müşteri memnuniyetini daha iyi görüşmelerle geliştirin\n\n* Zendesk Support kayıt sayfalarında, BigCommerce'ten faturalandırma, sevkiyat ve sipariş bilgileri gibi ilgili müşteri verilerine erişerek kayıtları daha hızlı çözün.\n* Zendesk Support'ta Müşteri Numarası veya Sipariş Numaralarına tıklayarak, BigCommerce'teki ek verilere kolayca gidin.\n\nBu uygulamayı etkinleştirerek, [Built by Zendesk Kullanım Koşulları](https://www.zendesk.com/company/built-by-zendesk-agmt/)'nı kabul etmiş olursunuz.",
+    "installation_instructions": "Kurulum talimatı için [BigCommerce için Zendesk Support uygulamasını kurma](https://support.zendesk.com/hc/en-us/articles/203660086) makalesine bakın.\n",
     "parameters": {
       "url": {
         "label": "Mağaza URL"
@@ -24,7 +26,7 @@
       "customerNotFound": "Müşteri bulunamadı."
     },
     "loading": "Müşteri verileri yükleniyor...",
-    "requesting": "Bigcommerce’ten müşteri verileri isteniyor..."
+    "requesting": "BigCommerce'ten müşteri verileri isteniyor..."
   },
   "customer": {
     "notes": "Notlar",

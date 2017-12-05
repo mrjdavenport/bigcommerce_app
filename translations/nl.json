@@ -1,7 +1,9 @@
 {
   "app": {
-    "name": "Bigcommerce",
-    "description": "Geeft info over klant en order van Bigcommerce weer.",
+    "name": "BigCommerce",
+    "short_description": "Geeft info over klant en ordergegevens van Bigcommerce weer.",
+    "long_description": "De integratie van Zendesk Support en BigCommerce verenigt uw bedrijfsactiviteiten doordat cruciale BigCommerce-gegevens naast Zendesk Support-ticketinformatie worden weergegeven.\n\n### Verbeter de klanttevredenheid met betere gesprekken\n\n* Los tickets sneller op dankzij toegang tot relevante klantgegevens uit BigCommerce, zoals informatie over facturering, verzendingen en orderinfo op Zendesk Support-ticketpagina’s.\n*Navigeer eenvoudig naar aanvullende gegevens in BigCommerce door in Zendesk Support op een klantnummer of ordernummer te klikken.\n\nDoor het inschakelen van deze app gaat u akkoord met de [Gebruiksvoorwaarden van Gemaakt door Zendesk](https://www.zendesk.com/company/built-by-zendesk-agmt/).",
+    "installation_instructions": "Ga voor installatie-instructies naar het artikel [Installing the BigCommerce for Zendesk Support app](https://support.zendesk.com/hc/en-us/articles/203660086).\n",
     "parameters": {
       "url": {
         "label": "Webadres van winkel"
@@ -13,7 +15,7 @@
         "label": "API-token"
       },
       "order_id_field_id": {
-        "label": "Order-id Veld-id"
+        "label": "Order-Id Veld-Id"
       }
     }
   },
@@ -24,7 +26,7 @@
       "customerNotFound": "Kan klant niet vinden."
     },
     "loading": "Klantgegevens laden...",
-    "requesting": "Klantgegevens opvragen bij Bigcommerce..."
+    "requesting": "Klantgegevens opvragen bij BigCommerce..."
   },
   "customer": {
     "notes": "Notities",

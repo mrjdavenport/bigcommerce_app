@@ -1,7 +1,9 @@
 {
   "app": {
-    "name": "Bigcommerce",
-    "description": "Näyttää asiakkaan ja tilauksen tiedot Bigcommercesta.",
+    "name": "BigCommerce",
+    "short_description": "Näyttää asiakkaan ja tilauksen tiedot BigCommercesta.",
+    "long_description": "Zendesk Supportin ja BigCommercen integroinnilla esitetään kriittiset BigCommerce-tiedot Zendesk Support -tikettitietojen vieressä.\n\n### Paranna asiakastyytyväisyyttä parempien keskustelujen ansiosta.\n\n* Ratkaise tiketit nopeammin, koska sinulla on mahdollisuus käyttää relevantteja asiakastietoja BigCommercesta, kuten laskutus-, toimitus- ja tilaustiedot Zendesk Supportin tikettisivuilla.\n* Siirry helposti BigCommerce-lisätietoihin napsauttamalla Zendesk Supportin asiakasnumeroita tai tilausnumeroita. \n\nOttamalla tämän sovelluksen käyttöön hyväksyt [Zendeskin kehittämä -käyttöehdot](https://www.zendesk.com/company/built-by-zendesk-agmt/).",
+    "installation_instructions": "Asennusohjeet ovat artikkelissa [BigCommerce-sovelluksen asentaminen Zendesk Supportia varten](https://support.zendesk.com/hc/en-us/articles/203660086).\n",
     "parameters": {
       "url": {
         "label": "Säilytä URL-osoite"
@@ -10,7 +12,7 @@
         "label": "Käyttäjätunnus"
       },
       "api_token": {
-        "label": "API-tunnus"
+        "label": "API-token"
       },
       "order_id_field_id": {
         "label": "Tilaustunnuksen kenttätunnus"
@@ -21,10 +23,10 @@
     "error": {
       "title": "Esiintyi virhe",
       "message": "Yritä edellistä toimintoa uudelleen.",
-      "customerNotFound": "Asiakas ei löytynyt."
+      "customerNotFound": "Asiakasta ei löytynyt."
     },
     "loading": "Lataa asiakastietoja...",
-    "requesting": "Pyytää asiakastietoja Bigcommercesta..."
+    "requesting": "Pyytää asiakastietoja BigCommercesta..."
   },
   "customer": {
     "notes": "Huomautukset",

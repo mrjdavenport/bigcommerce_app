@@ -1,7 +1,9 @@
 {
   "app": {
-    "name": "Bigcommerce",
-    "description": "لعرض بيانات العملاء والطلبات من Bigcommerce.",
+    "name": "BigCommerce",
+    "short_description": "لعرض بيانات العملاء والطلبات من BigCommerce.",
+    "long_description": "يعمل دمج Zendesk Support من أجل BigCommerce على توحيد أعمالك عن طريق عرض بيانات BigCommerce الحيوية إلى جوار معلومات تذكرة Zendesk Support.‏\n\n### تحسين رضاء العملاء عن طريق محادثات أفضل\n\n* حل التذاكر بسرعة أكبر عن طريق إمكانية الوصول إلى بيانات العميل المهمة من BigCommerce، مثل الفوترة والشحن ومعلومات الطلبات على صفحات تذاكر Zendesk Support.‏\n* سهولة التصفح إلى بيانات إضافية في BigCommerce بمجرد النقر فوق أرقام العملاء أو أرقام الطلبات في Zendesk Support.‏‏\n\nبموجب تمكين هذا التطبيق، أنت توافق على [شروط استخدام Built by Zendesk](https://www.zendesk.com/company/built-by-zendesk-agmt/‎).‏",
+    "installation_instructions": "للحصول على تعليمات التثبيت، انظر المقال [تثبيت تطبيق BigCommerce من أجل Zendesk Support](https://support.zendesk.com/hc/en-us/articles/203660086).‏\n",
     "parameters": {
       "url": {
         "label": "عنوان URL المتجر"
@@ -10,7 +12,7 @@
         "label": "اسم المستخدم"
       },
       "api_token": {
-        "label": "رمز مميز لواجهة البرمجة"
+        "label": "إذن لواجهة البرمجة"
       },
       "order_id_field_id": {
         "label": "معرّف حقل معرّف الطلب"
@@ -24,7 +26,7 @@
       "customerNotFound": "تعذر العثور على العميل."
     },
     "loading": "جارٍ تحميل بيانات العميل...",
-    "requesting": "جارٍ طلب بيانات العميل من Bigcommerce..."
+    "requesting": "جارٍ طلب بيانات العميل من BigCommerce..."
   },
   "customer": {
     "notes": "ملاحظات",

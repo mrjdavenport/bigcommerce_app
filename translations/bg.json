@@ -1,0 +1,48 @@
+{
+  "app": {
+    "name": "BigCommerce",
+    "short_description": "Показва данни за клиенти и поръчки от BigCommerce.",
+    "long_description": "Интеграцията на Zendesk Support за BigCommerce способства за обединяването на вашия бизнес чрез показване на важни данни от BigCommerce заедно с информацията за казусите в Zendesk Support.\n\n### Повишете удовлетвореността на клиента чрез по-добро общуване\n\n* Решавайте казусите по-бързо чрез достъп до подходящи данни за клиенти от BigCommerce, напр. за плащания, доставки и поръчки, на страниците на казусите в Zendesk Support.\n* Лесно преглеждайте допълнителни данни в BigCommerce просто чрез кликване върху номера на клиента или поръчката в Zendesk Support.\n\nАктивирайки това приложение, вие приемате [Условията за ползване на приложения, създадени от Zendesk](https://www.zendesk.com/company/marketplace/).",
+    "installation_instructions": "За инструкции за инсталиране вижте статията [Инсталиране на приложението BigCommerce за Zendesk Support](https://support.zendesk.com/hc/en-us/articles/203660086).\n",
+    "parameters": {
+      "url": {
+        "label": "URL на магазина"
+      },
+      "username": {
+        "label": "Потребителско име"
+      },
+      "api_token": {
+        "label": "API токен"
+      },
+      "order_id_field_id": {
+        "label": "Идентификатор на полето за идентификатор на поръчка"
+      }
+    }
+  },
+  "global": {
+    "error": {
+      "title": "Възникна грешка",
+      "message": "Опитайте отново предишното действие.",
+      "customerNotFound": "Клиентът не беше намерен."
+    },
+    "loading": "Зареждане на клиентските данни...",
+    "requesting": "Искане на клиентски данни от BigCommerce..."
+  },
+  "customer": {
+    "notes": "Забележки",
+    "no_notes": "Засега няма бележки."
+  },
+  "orders": {
+    "id": "ПОСЛЕДНИ ПОРЪЧКИ",
+    "status": "СТАТУС"
+  },
+  "order": {
+    "status": "Статус",
+    "count": "Брой поръчки",
+    "ticket": "Данни на поръчката за",
+    "subtotal_inc_tax": "Междинна сума (вкл. данъци)",
+    "total_inc_tax": "Крайна сума (вкл. данъци)",
+    "date_created": "Дата на създаване",
+    "date_shipped": "Дата на изпращане"
+  }
+}

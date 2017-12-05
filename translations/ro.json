@@ -1,7 +1,9 @@
 {
   "app": {
-    "name": "Bigcommerce",
-    "description": "Afişează detaliile clientului şi comenzii din Bigcommerce.",
+    "name": "BigCommerce",
+    "short_description": "Afișează detaliile clientului și comenzii din BigCommerce.",
+    "long_description": "Integrarea Zendesk Support pentru BigCommerce este concepută pentru a vă unifica afacerea, afișând date critice din BigCommerce alături de informațiile tichetului Zendesk Support.\n\n### Îmbunătățiți satisfacția clienților cu conversații mai eficiente\n\n* Rezolvați tichete mai rapid având acces la datele relevante ale clientului din BigCommerce, cum ar fi facturarea, livrarea și informațiile comenzii, în paginile tichetelor Zendesk Support.\n* Navigați cu ușurință la datele suplimentare din BigCommerce printr-un simplu clic pe numerele de client sau numerele de comandă din Zendesk Support.\n\nActivând această aplicație, sunteți de acord cu [Termenii de utilizare pentru produsele desemnate prin „Conceput de Zendesk”](https://www.zendesk.com/company/built-by-zendesk-agmt/).",
+    "installation_instructions": "Pentru instrucțiuni privind instalarea, consultați articolul [Instalarea aplicației BigCommerce pentru Zendesk Support](https://support.zendesk.com/hc/en-us/articles/203660086).\n",
     "parameters": {
       "url": {
         "label": "Adresă URL magazin"
@@ -20,11 +22,11 @@
   "global": {
     "error": {
       "title": "A apărut o eroare",
-      "message": "Vă rugăm să repetaţi acţiunea anterioară.",
+      "message": "Vă rugăm să repetați acțiunea anterioară.",
       "customerNotFound": "Clientul nu a putut fi găsit."
     },
     "loading": "Se încarcă datele clientului...",
-    "requesting": "Se solicită datele clientului de la Bigcommerce..."
+    "requesting": "Se solicită datele clientului de la BigCommerce..."
   },
   "customer": {
     "notes": "Note",
