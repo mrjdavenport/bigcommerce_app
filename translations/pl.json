@@ -1,7 +1,9 @@
 {
   "app": {
     "name": "Bigcommerce",
-    "description": "Wyświetla szczegóły klienta i zamówienia z Bigcommerce.",
+    "short_description": "Wyświetla dane klienta i zamówienia z BigCommerce.",
+    "long_description": "Integracja Zendesk Support dla BigCommerce ujednolica informacje dostępne w firmie, wyświetlając ważne dane z BigCommerce obok informacji o zgłoszeniu Zendesk Support.\n\n### Większe zadowolenie klientów dzięki owocnym rozmowom\n\n* Dostęp na stronach zgłoszeń w Zendesk Support do ważnych danych o klientach z BigCommerce, takich jak adres do rozliczeń, adres wysyłki i informacje o zamówieniu, umożliwia szybsze załatwianie zgłoszeń.\n* Do dodatkowych danych w BigCommerce można łatwo przejść, klikając numer klienta lub numer zamówienia w Zendesk Support.\n\nWłączając tę aplikację, wyrażasz zgodę na [Warunki świadczenia usługi dotyczące aplikacji opracowanej przez Zendesk](https://www.zendesk.com/company/built-by-zendesk-agmt/).",
+    "installation_instructions": "Instrukcje instalacji można znaleźć w artykule [Instalowanie aplikacji BigCommerce dla Zendesk Support](https://support.zendesk.com/hc/en-us/articles/203660086).\n",
     "parameters": {
       "url": {
         "label": "Adres URL sklepu"
@@ -24,7 +26,7 @@
       "customerNotFound": "Nie można znaleźć klienta."
     },
     "loading": "Ładowanie danych klienta...",
-    "requesting": "Żądanie danych klienta od Bigcommerce..."
+    "requesting": "Żądanie danych klienta od BigCommerce..."
   },
   "customer": {
     "notes": "Notatki",

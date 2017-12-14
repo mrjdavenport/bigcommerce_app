@@ -1,7 +1,9 @@
 {
   "app": {
     "name": "Bigcommerce",
-    "description": "Visar kund- och beställningsuppgifter från Bigcommerce.",
+    "short_description": "Visar kund- och beställningsuppgifter från BigCommerce.",
+    "long_description": "Zendesk Support för BigCommerce-integreringen förenar din verksamhet genom att visa viktiga BigCommerce-data tillsammans med Zendesk Support-ärendeuppgifter.\n\n### Förbättra kundnöjdheten med bättre samtal\n\n* Lös ärenden snabbare genom att ha tillgång till relevanta kunduppgifter från BigCommerce, som fakturering, leveranser och beställningsinformation, på Zendesk Support-ärendesidor.\n* Navigera enkelt till ytterligare data i BigCommerce genom att helt enkelt klicka på kund- eller ordernummer i Zendesk Support.\n\nNär du aktiverar denna app innebär det att du samtycker till [användningsvillkoren för Built by Zendesk](https://www.zendesk.com/company/built-by-zendesk-agmt/).",
+    "installation_instructions": "Installationsanvisningar finns i artikeln [Installing the BigCommerce for Zendesk Support app](https://support.zendesk.com/hc/en-us/articles/203660086).\n",
     "parameters": {
       "url": {
         "label": "Butikens webbadress"
@@ -24,7 +26,7 @@
       "customerNotFound": "Det gick inte att hitta kunden."
     },
     "loading": "Läser in kunduppgifter...",
-    "requesting": "Begär kunduppgifter från Bigcommerce..."
+    "requesting": "Begär kunduppgifter från BigCommerce..."
   },
   "customer": {
     "notes": "Anteckningar",

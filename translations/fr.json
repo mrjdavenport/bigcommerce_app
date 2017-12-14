@@ -1,7 +1,9 @@
 {
   "app": {
-    "name": "Bigcommerce",
-    "description": "Affiche les détails du client et de la commande de Bigcommerce.",
+    "name": "BigCommerce",
+    "short_description": "Affiche les détails des clients et des commandes de BigCommerce.",
+    "long_description": "L’intégration Zendesk Support pour BigCommerce vous permet d’unifier vos activités en affichant les données BigCommerce critiques à côté des informations de tickets Zendesk Support.\n\n### Améliorez la satisfaction des clients grâce à de meilleures conversations.\n\n* Résolvez les tickets plus rapidement grâce à l’accès aux données clients pertinentes de BigCommerce, comme les informations de facturation, d’expédition et de commande, dans les pages de tickets Zendesk Support.\n* Accédez facilement à des données supplémentaires dans BigCommerce en cliquant simplement sur le numéro de client ou de commande dans Zendesk Support.\n\nEn activant cette application, vous acceptez les [Conditions d’utilisation Créées par Zendesk](https://www.zendesk.com/company/built-by-zendesk-agmt/).",
+    "installation_instructions": "Pour les instructions d’installation, consultez l’article portant sur [l’installation de l’application BigCommerce pour Zendesk] (https://support.zendesk.com/hc/en-us/articles/203660086).\n",
     "parameters": {
       "url": {
         "label": "URL du magasin"
@@ -10,10 +12,10 @@
         "label": "Nom d’utilisateur"
       },
       "api_token": {
-        "label": "Jeton API"
+        "label": "Token API"
       },
       "order_id_field_id": {
-        "label": "ID de champ de l’ID de commande"
+        "label": "ID du champ pour l’ID de commande"
       }
     }
   },
@@ -24,11 +26,11 @@
       "customerNotFound": "Client introuvable."
     },
     "loading": "Chargement des données client en cours...",
-    "requesting": "Demande des données client à Bigcommerce en cours…"
+    "requesting": "Demande des données client à BigCommerce en cours…"
   },
   "customer": {
-    "notes": "Remarques",
-    "no_notes": "Aucune remarque pour l’instant."
+    "notes": "Notes  ",
+    "no_notes": "Aucune note pour l’instant."
   },
   "orders": {
     "id": "COMMANDES RÉCENTES",

@@ -1,7 +1,9 @@
 {
   "app": {
-    "name": "Bigcommerce",
-    "description": "Zobrazí detaily zákazníka a objednávky z Bigcommerce.",
+    "name": "BigCommerce",
+    "short_description": "Zobrazí detaily zákazníka a objednávky z BigCommerce.",
+    "long_description": "Integrace Zendesk Supportu pro BigCommerce slouží ke sjednocení vašeho podnikání zobrazením nejdůležitějších dat z aplikace BigCommerce vedle informací tiketu Zendesk Supportu.\r\n\r\n### Zlepšete spokojenost zákazníků pomocí lepších konverzací\r\n\r\n* Řešte tikety rychleji díky přístupu k příslušným datům zákazníků z aplikace BigCommerce, jako jsou například informace o fakturacích, dodávkách nebo objednávkách, na stránkách tiketů Zendesk Supportu.\r\n* Snadno přejděte k dalším datům v aplikaci BigCommerce kliknutím na Čísla zákazníků nebo Čísla objednávek v Zendesk Supportu.\r\n\r\nTím, že zapnete tuto aplikaci, souhlasíte s [Podmínkami používání aplikací vytvořených společností Zendesk](https://www.zendesk.com/company/built-by-zendesk-agmt/).",
+    "installation_instructions": "Pokyny pro instalaci najdete v článku [Instalace aplikace BigCommerce pro Zendesk Support] (https://support.zendesk.com/hc/en-us/articles/203660086).\n",
     "parameters": {
       "url": {
         "label": "URL obchodu"
@@ -13,7 +15,7 @@
         "label": "Token API"
       },
       "order_id_field_id": {
-        "label": "ID objednávkypole ID objednávky"
+        "label": "ID pole ID objednávky"
       }
     }
   },
@@ -24,14 +26,14 @@
       "customerNotFound": "Zákazníka nelze najít."
     },
     "loading": "Načítání dat zákazníka...",
-    "requesting": "Požadavek na data zákazníka z Bigcommerce..."
+    "requesting": "Požadavek na data zákazníka z BigCommerce..."
   },
   "customer": {
     "notes": "Poznámky",
     "no_notes": "Dosud žádné poznámky."
   },
   "orders": {
-    "id": "POSLEDNÍ OBJEDNÁVKY",
+    "id": "NEDÁVNÉ OBJEDNÁVKY",
     "status": "STAV"
   },
   "order": {

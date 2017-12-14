@@ -1,7 +1,9 @@
 {
   "app": {
-    "name": "Bigcommerce",
-    "description": "Bigcommerceからの顧客および注文の詳細を表示します。",
+    "name": "BigCommerce",
+    "short_description": "BigCommerceからの顧客情報と注文の詳細を表示します。",
+    "long_description": "Zendesk Support for Bigcommerceインテグレーションは、Zendesk Supportのチケット情報とともに重要なBigcommerceデータを表示することにより、ビジネスを一体化させる機能を提供します。\n\n###やりとりの内容を充実させることで顧客満足度を向上\n\n* Bigcommerceの請求、出荷、注文情報などのカスタマーデータにZendesk Supportのチケットページからアクセスすることで、チケットをより迅速に解決します。\n*Zendesk Supportで顧客番号または注文番号をクリックするだけで、Bigcommerce内の詳細データに簡単に移動できます。\n\nこのアプリを有効にすることにより、[Zendesk作成の利用規約](https://www.zendesk.com/company/built-by-zendesk-agmt/)に同意したものとみなされます。",
+    "installation_instructions": "インストール手順については、[BigCommerce for Zendesk Supportアプリのインストール](https://support.zendesk.com/hc/en-us/articles/203660086)の記事を参照してください。\n",
     "parameters": {
       "url": {
         "label": "ストアのURL"
@@ -24,7 +26,7 @@
       "customerNotFound": "カスタマーが見つかりませんでした。"
     },
     "loading": "顧客データを読み込み中...",
-    "requesting": "Bigcommerceから顧客データを要求しています..."
+    "requesting": "BigCommerceの顧客データを要求しています..."
   },
   "customer": {
     "notes": "メモ",

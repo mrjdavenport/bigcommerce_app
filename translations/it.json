@@ -1,7 +1,9 @@
 {
   "app": {
-    "name": "Bigcommerce",
-    "description": "Visualizza informazioni dettagliate su cliente e ordine da Bigcommerce.",
+    "name": "BigCommerce",
+    "short_description": "Visualizza informazioni dettagliate su cliente e ordine da BigCommerce.",
+    "long_description": "L’integrazione di Zendesk Support per BigCommerce consente di unificare le attività aziendali mostrando i dati essenziali di BigCommerce accanto alle informazioni dei ticket Zendesk Support.\n\n### Incremento del livello di soddisfazione dei clienti grazie a conversazioni di qualità\n\n* Soluzione più rapida dei ticket grazie all’accesso a dati pertinenti sui clienti in BigCommerce, tra cui fatturazione, spedizione e informazioni sugli ordini, dalle pagine dei ticket in Zendesk Support.\n* Ricerca semplificata di ulteriori dati in BigCommerce mediante la semplice selezione dei numeri dei clienti o degli ordini in Zendesk Support.\n\nAttivando l’app, accetti i [Termini di utilizzo per le app create da Zendesk](https://www.zendesk.com/company/built-by-zendesk-agmt/).",
+    "installation_instructions": "Per informazioni sull’installazione, leggi l’articolo [Installazione dell’app BigCommerce per Zendesk Support](https://support.zendesk.com/hc/en-us/articles/203660086).\n",
     "parameters": {
       "url": {
         "label": "URL negozio"
@@ -24,7 +26,7 @@
       "customerNotFound": "Cliente non trovato."
     },
     "loading": "Caricamento dati cliente...",
-    "requesting": "Richiesta dati cliente da Bigcommerce in corso..."
+    "requesting": "Richiesta dati cliente da BigCommerce in corso..."
   },
   "customer": {
     "notes": "Note",
